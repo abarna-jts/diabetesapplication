@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   
+
+<title>Diabetes Test Form</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="form-container">
+                <form onsubmit="NextPage()">
+                    <section class="sec-container">
+                        <p>Are you a man or a woman?</p>
+                        <p class="small1">Men are more likely than women to have undiagnosed diabetes; 
+                            one reason may be that they are less likely to see their doctor regularly.</p>
+                        <div class="radio-group">
+                            <label class="yes">
+                                <input type="radio" name="gender" value="man" onclick="toggleQuestions('man')">
+                                Man<br><br>
+                                <input type="radio" name="gender" value="woman" onclick="toggleQuestions('woman')">
+                                Women<br><br>
+                            </label>
+                        </div>
+                        <div id="second-questions" style="display: none; margin-top: -4%;">
+                            <p>Have you ever been diagnosed with gestational diabetes?</p>
+                            <p class="small1">Gestational diabetes is a type of diabetes that develops during pregnancy.
+                                It goes away after pregnancy, but women who have gestational diabetes 
+                                have an increased risk of developing type 2 diabetes.</p>
+                            <div class="radio-group">
+                                <label class="yes">
+                                    <input type="radio" name="gestational-diabetes" value="yes">
+                                    Yes<br><br>
+                                    <input type="radio" name="gestational-diabetes" value="no">
+                                    No<br><br>
+                                </label>
+                            </div>
+                        </div>
+                        <a href="test4.html">
+                            <button type="button" class="close-button">Previous</button>
+                        </a>
+                        <a href="text6.html">
+                            <button type="button" class="close-button">Next</button><br>
+                        </a>
+                    </section>
+                </form>
+            </div>
+            <script>
+                function toggleQuestions(value) {
+                    var secondQuestions = document.getElementById("second-questions");
+            
+                    if (value === "woman") {
+                        // If the user selects "Woman", show the second set of questions
+                        secondQuestions.style.display = "block";
+                    } else {
+                        // If the user selects "Man" or any other option, hide the second set of questions
+                        secondQuestions.style.display = "none";
+                    }
+                }
+            </script>
+    </body>
+</html>

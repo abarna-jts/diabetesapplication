@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   
+
+<title>Diabetes Test Form</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="form-container">
+                <form onsubmit="NextPage()">
+                    <section class="sec-container">
+                        <p>Do you have a mother, father, sister, or brother with diabetes?</p>
+                        <p class="small">A family history of diabetes could contribute to your risk for type 2 diabetes.</p>
+                        <div class="radio-group">
+                            <label class="yes">
+                                <input type="radio" name="family-history" value="yes">
+                                Yes<br><br>
+                                <input type="radio" name="family-history" value="no">No
+                            </label>
+                           
+                        </div>
+                        <p>Have you ever been diagnosed with high blood pressure?</p>
+                        <p class="small">Having high blood pressure contributes to your overall risk for type 2 diabetes.</p>
+                        <div class="radio-group">
+                            <label class="yes">
+                                <input type="radio" name="family-history" value="yes">
+                                Yes<br><br>
+                                <input type="radio" name="family-history" value="no">No
+                            </label>
+                        </div><br>
+                        <br><br>
+                        <br>
+                        <button type="button" class="close-button" onclick="NextPage()">Next</button><br>
+                    </section>
+                </form>
+            </div>
+            <script>
+                function NextPage() {
+                    // Change the URL to the desired page (test2.html)
+                    window.location.href = 'test2.html';
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <title>Diabetes Test Form</title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <div class="form-container">
+                <form>
+                    <section class="sec-container">
+                        <p>How old are you?</p>
+                        <p class="small">You are at a higher risk for type 2 diabetes the older you are.</p>
+                        <div class="radio-group">
+                            <label class="yes">
+                                <input type="radio" name="family-history" value="yes" required>
+                                Younger than 40<br><br>
+                                <input type="radio" name="family-history" value="no" required>40-49 Years<br><br>
+                                <input type="radio" name="family-history" value="no" required>50-59 Years<br><br>
+                                <input type="radio" name="family-history" value="no" required>60+ Years<br><br>
+                            </label>
+                        </div>
+                        <a href="test1.html">
+                            <button type="button" class="close-button">Previous</button>
+                        </a>
+                        <a href="test3.html">
+                            <button type="button" class="close-button">Next</button><br>
+                        </a>
+                        <span id="validationMessage" class="validation-message"></span>
+                    </section>
+                </form>
+            </div>
+    </body>
+</html>
