@@ -1,0 +1,60 @@
+.form-container {
+    background-color: #e2f8f8;
+    width:120vh;
+    height:80vh;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.form-container .sec-container{
+    border: 2px solid rgb(0, 163, 192); 
+    border-radius: 5px; 
+    width:120vh;
+    height:80vh;
+    margin: 10% auto;
+    overflow-y: auto;
+}
+.sec-container p{
+    font-size: 1.2em;
+    color: rgb(59, 59, 59);
+    white-space:nowrap;
+    white-space: pre-line;
+    margin-left: 5%;
+    margin-top:-2%;
+}
+.sec-container .testpoint h1{
+ font-size: 1.8em;
+ margin-left: 5%;
+}
+.sec-container a{
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 3%;
+    color: rgb(42, 95, 192);
+}
+.sec-container .testpoint .tittle{
+    font-size: 1.5em;
+    margin-left: 5%;
+    font-weight: 500;
+    color:rgb(2, 119, 70);
+   }
+   .header{
+    margin-left: 3%;
+    position: relative;
+   }
+   .header h1{
+    font-size: 3em;
+    color: rgb(49, 83, 151);
+   }
+   .header h2{
+    font-size: 1.9em;
+    color:rgb(0, 163, 192);
+   }
+   .content h3{
+    margin-left: 3%;
+    color:rgb(49, 83, 151);
+    font-size: 1.3em;
+   }
+   .content li{
+    margin-left: 3%;
+    list-style-type: none;
+   }

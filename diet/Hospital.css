@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #DDDDDD;
+}
+.wrapper{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+h1{
+	text-align: center;
+	margin-top: 20px;
+}
+table{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: left;
+	border-spacing: 0.7cm 0em;
+	margin-left: 20px;
+}
+td{
+	border: 1px black;
+}
+th span #error{
+	color: red;
+}
+.required {
+  color: red !important;
+}
+#error{
+	color: red;
+}
+input{
+	width: 200px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+#cdate{
+	width: 300px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+.hei{
+	width: 120px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+#ag{
+	width: 120px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+#wardno{
+	width: 120px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+#pname{
+	width: 220px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+#title{
+	width: 80px;
+	height: 33.2px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+	border: 1.5px solid black;
+}
+#gender{
+	width: 203px;
+	height: 34px;
+	text-align: left;
+	background-color: #FFFFFF;
+	font-size: 20px;
+	border: 1.6px solid black;
+}
+.dname{
+	width: 300px;
+	height: 30px;
+	background-color: #FFFFFF;
+	font-size: 20px;
+}
+.timing{
+	margin-left: 20px;
+	margin-top: 15px;
+	text-align: center;
+}
+#timing{
+	height: 30px;
+	width: 110px;
+	color: #000000;
+	text-align: center;
+}
+.dietplan{
+	margin-left: 185px;
+	width: 300px;
+	height: 20px;
+	margin-top: -306px;
+	text-align: center;
+}
+.plan{
+	width: 360px;
+}
+.calories{
+	margin-left: 630px;
+	margin-top: -344px;
+	text-align: center;
+}
+.total{
+	margin-top: 13px;
+	margin-left: 430px;
+}
+ #total{
+	background-color: #AAAAAA;
+}
+.restricteddiet{
+	margin-left: 900px;
+	margin-top: -320px;
+	text-align: center;
+}
+.remark{
+	width: 108%;
+}
+.remarks{
+	margin-left: 1190px;
+	margin-top: -287px;
+	text-align: center;
+}
+.not{
+	width: 541%;
+}
+.note{
+	margin-left: 20px;
+}
+#button{
+	border: none;
+	margin-top: 35px;
+	background-color: #AAAAAA;
+	width: 80px;
+	cursor: pointer;
+	font-size: 20px;
+}
+.button{
+	margin-left: 500px;
+}
+#msg{
+	text-align: center;
+    width: 250px;
+    background-color: #818181;
+    color: #fff;
+    margin-left: 44%;
+    height: auto;
+    padding: 11px;
+    font-size: 18px;
+}
