@@ -20,6 +20,7 @@
                     <li><a href="./Hospital.php">Hospital</a></li>
                     <li><a href="./discharge.php">Discharge</a></li>
                     <li><a href="./Summary1.php">Summary</a></li>
+                    <li><a href="./history.php">History of Diabetes</a></li> 
                 </ul>
             </nav>    
         </header>

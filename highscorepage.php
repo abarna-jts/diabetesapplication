@@ -65,6 +65,7 @@
         .zoom-effect:hover {
             transform: scale(1.2); /* Adjust the scale factor as needed */
         }
+      
    </style>
 </head>
 <body>

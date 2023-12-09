@@ -5,6 +5,7 @@ body{
     padding: 0;
     background-color: #ffffff;   
 }
+
   h1{
     text-align: center;
     font-size: 3.7em;
@@ -85,7 +86,9 @@ body{
     margin-left: auto;
     position: relative;
 }
-
+.header li:hover a {
+  font-size: 22px; /* Increase font size on hover */
+}
 .header .navbar a {
     font-size: 2.1em;
     margin-left: 1.5em;
@@ -483,9 +486,324 @@ ul {
   #button-7:hover a {
     left: 150px;
   }
-
-  .rounded_img{
-    width:40vh; 
-    height:60%;
-    border-radius: 50%;
+  /* about page */
+  .about h1{
+    text-align: center;
   }
+  .about p{
+    margin: 0 auto;
+    width:70%;
+    height: auto;
+    font-size: 1.9em;
+  }
+  .about {
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid rgb(49, 83, 151);
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* about page end */
+
+/* HISTORY PAGE START */
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.history_box {
+  width: 40%; 
+  border: 2px solid rgb(49, 83, 151);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+.history_content {
+  padding: 20px;
+}
+
+.heading_heading {
+  font-size: 1.2em;
+  color: #333;
+}
+.heading_heading strong{
+  color:rgb(56, 161, 175);
+  font-size: 1.6em;
+}
+.heading_heading p{
+  font-size: 1.4em;
+}
+/* .slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.text {
+  background-color: rgb(75, 100, 148);
+  color: #0a0a0a;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  padding: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+} */
+.mySlides {
+  display: none;
+  
+}
+.slideshow-container {
+  background-color: rgb(73, 101, 158);
+  height:100px;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  position: absolute;
+  top: 80%; 
+  left: 47%;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 50px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.line11a
+{
+  
+	float:left;
+	margin-right:2%;
+	width:23%;
+	height:auto;
+}
+.bggray {
+    background-color: #f9f9f9;
+}
+
+.gaplrtb20 {
+    padding: 20px;
+}
+.gapb10 {
+    padding: 0 0 10px 0;
+}
+a.btnreadmore3 {
+    color: #ffffff;
+}
+a:visited {
+    color: #fff;
+}
+.btnreadmore3 {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #444444;
+    padding: 0 0 20px 0;
+    font-size: 14px;
+    font-family: 'Lato', Arial, Verdana, Geneva, sans-serif;
+    text-decoration: none;
+    margin: 0px;
+    color: #444444;
+    position: relative;
+    display: block;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+a {
+    color: #00e;
+}
+.line11a {
+  margin-left: 3%;
+  flex: 1;
+  padding: 20px;
+}
+
+.gaplrtb20 {
+  margin: 0;
+}
+
+.bggray {
+
+  background-color: #79A7D3;
+}
+
+.btnreadmore3 {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #79A7D3;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btnreadmore3:hover {
+  background-color: #555;
+}
+
+.history_box {
+  flex: 1;
+  padding: 20px;
+}
+
+.history_content {
+  color: #333;
+}
+
+.heading_heading {
+  margin-bottom: 20px;
+}
+
+.heading_heading strong {
+  color: #1f57a0;
+  font-size: 2em;
+}
+
+.heading_heading p {
+  margin-top: 10px;
+}
+.image-container {
+  width: 100%; 
+  overflow: hidden; 
+}
+
+.image-container img {
+  width:100%;
+  margin-left: -5%;
+  flex: 1;
+  padding: 20px;
+}
+/* HISTORY PAGE END */
+
+/* DIABETES PAGE START  */
+
+.diabetes {
+  width: 40%; 
+  border: 2px solid rgb(49, 83, 151);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+.diabetes_content {
+  padding: 20px;
+}
+
+.diabetes_heading {
+  font-size: 1.2em;
+  color: #333;
+}
+.diabetes_heading strong{
+  color:rgb(56, 161, 175);
+  font-size: 1.6em;
+}
+.diabetes_heading p{
+  font-size: 1.4em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li::before {
+  content:  "\2192"; /* Unicode character for a bullet point (•) */
+  color: #1f57a0; /* Color of the bullet point */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ul li strong {
+  font-weight: bold;
+}

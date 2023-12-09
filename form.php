@@ -233,7 +233,7 @@ function validateEmail(input) {
 function validate() {
    const form = document.querySelector("#form")
    const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbwG9vCMBREFM4suhSiTdVPFu7-F-6JclKyZGGuKjFS-dqaZT6kKXS6r_15kub3YH2R5yw/exec'
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwF0SbHK4jkDFrqKlqnO-1pUDfNEKDay_CZX-e5VuVQ6hm1RhoKXcipnlcHj2ERnGqk/exec'
 
    form.addEventListener('submit', e => {
      submitButton.disabled = true
