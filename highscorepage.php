@@ -1,3 +1,7 @@
+<?php
+$totalScore = $_GET['totalScore'] ?? 0; 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +14,7 @@
         color:rgb(15, 48, 141);
         font-size: 2.5em;
     }
-    a{
+    .hover_link a{
         font-size: large;
         color:#000;
     }
@@ -38,6 +42,9 @@
         font-size:2.4em;
     }
     .score{
+        font-size: 1.4em;
+    }
+    .score a{
         font-size: 1.4em;
     }
   ul {
@@ -97,7 +104,7 @@
                     <br>
                     <div class="hover_link">
                     <a href="#" id="style-2" data-replace="About the risk test"><span>About the risk test</span></a><br><br>
-                    <a href="form.php" id="style-2" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
+                    <a href="form.php?totalScore=<?php echo $totalScore; ?>" id="style-2" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
                     </div>
                     <!-- <a href="about.html" class="link"  style="font-size: 1.4em;">About the risk test</a><br><br> -->
                     <!-- <a href="email.html" class="link"  style="font-size: 1.4em;">Invite you friends and family to take the test</a> -->
@@ -106,6 +113,8 @@
                     
                     <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>
                 </div>
+        
+
             </section>
         </form>
     </div>
@@ -122,11 +131,9 @@
             return decodeURIComponent(results[2].replace(/\+/g, ' '));
         }
         var totalScore = getParameterByName('totalScore');
-
+        
         // Display totalScore in the designated element
         document.getElementById('totalScoreDisplay').innerText = totalScore;
-      
-
         // Function to print the score, total score, and prediction
         function printScore() {
             window.print();

@@ -109,7 +109,8 @@ function validateForm() {
     var totalScore = score4 + score5;
     // Display total score
     console.log("Total Score:", totalScore);
-
+   
+    
     if (totalScore < 3) {
         window.location.href = 'scorepage.php?totalScore=' + totalScore;
 
@@ -117,10 +118,9 @@ function validateForm() {
         // Redirect to highprediction.html
         window.location.href = 'highscorepage.php?totalScore=' + totalScore;
     }
-
-    // You can do something else with the total score, such as displaying it on the page or performing further actions
+    
 }
-
+    
 function calculateScore(heightValue, weightValue) {
     // Define scoring conditions based on height and weight values
     var scoringInfo = {

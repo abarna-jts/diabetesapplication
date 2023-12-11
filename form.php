@@ -1,3 +1,8 @@
+<?php
+$totalScore = $_GET['totalScore'] ?? 0; 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +32,7 @@
             <div class="col-md-6 col-10 my-4">
                 <h2 class="text-center mb-4">User Information</h2>
                 <form method="post" id="form" data-toggle="validator">
-
+                    
                     <!-- Title -->
                     <div class="form-group">
                         <label for="title">Title</label>
@@ -112,8 +117,7 @@
                     </div>
                    
                     <!-- Hidden input for the score -->
-                    <input type="hidden" name="score" value="<?php echo $score . '%'; ?>" >
-
+                    <input type="hidden" name="totalScore" value="<?php echo $totalScore; ?>" >
 
 
                     <div class="container">
@@ -227,39 +231,46 @@ function validateEmail(input) {
     }
 
 
-
+//    https://script.google.com/macros/s/AKfycbwF0SbHK4jkDFrqKlqnO-1pUDfNEKDay_CZX-e5VuVQ6hm1RhoKXcipnlcHj2ERnGqk/exec
 
 
 function validate() {
-   const form = document.querySelector("#form")
+    const form = document.querySelector("#form")
    const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbwF0SbHK4jkDFrqKlqnO-1pUDfNEKDay_CZX-e5VuVQ6hm1RhoKXcipnlcHj2ERnGqk/exec'
+   const scriptURL = 'https://script.google.com/macros/s/AKfycby-iZuEyw9swtj4GsRmf4sxWMbBVJrTwNOPEwOZuGHeUkuGkTYZWqwVxFi3Rav8w8tp/exec'
 
    form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(form)
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          alert('Success!', response)
-          submitButton.disabled = false
-         })
-       .catch(error => {
-       alert('Error!', error.message)
-         submitButton.disabled = false
+        submitButton.disabled = true;
+        e.preventDefault();
 
-       }
-       )
-   })
+        let requestBody = new FormData(form);
+        fetch(scriptURL, { method: 'POST', body: requestBody })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                alert('Success!', data);
+                submitButton.disabled = false;
+            })
+            .catch(error => {
+                alert('Error!', error.message);
+                submitButton.disabled = false;
+            });
+    });
 }
+
 document.querySelector('#form').addEventListener('submit', function (e) {
     e.preventDefault();
     validate();
 });
-
-</script>    
-
-
+function calculate(){
+    var totalScore1 = parseInt(getParameterByName('totalScore1')) || 0;
+}
+</script> 
+ 
 </body>
 </html>
 

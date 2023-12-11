@@ -273,7 +273,7 @@ input[type="radio" i] {
     outline-offset: 1px;
 } 
 ul {
-    text-align: center;
+    /* text-align: center; */
     width: auto;
     margin: 0 auto 0 -10% ;
     list-style: none;
@@ -783,27 +783,101 @@ a {
 .diabetes_heading strong{
   color:rgb(56, 161, 175);
   font-size: 1.6em;
+  /* margin-right: 75%; */
+}
+.diabetes_heading .h12{
+  color:#1f57a0;
+  font-size:2em;
 }
 .diabetes_heading p{
-  font-size: 1.4em;
-}
-ul {
-  list-style: none;
-  padding: 0;
+  font-size: 1.6em;
 }
 
-ul li {
+
+ li {
+  list-style: none;
   margin-bottom: 10px;
 }
 
-ul li::before {
-  content:  "\2192"; /* Unicode character for a bullet point (•) */
-  color: #1f57a0; /* Color of the bullet point */
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+/* DIABETES PAGE END  */
+
+/* TREATMENT PAGE START  */
+.treatment {
+  width: 40%; 
+  border: 2px solid rgb(49, 83, 151);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+.treatment {
+  padding: 20px;
 }
 
-ul li strong {
-  font-weight: bold;
+.treatment_heading {
+  font-size: 1.2em;
+  color: #333;
 }
+.treatment_heading strong{
+  color:rgb(56, 161, 175);
+  font-size: 1.6em;
+  /* margin-right: 75%; */
+}
+.treatment_heading .h22{
+  color:#1f57a0;
+  font-size:2em;
+}
+.treatment_heading p{
+  font-size: 1.6em;
+}
+
+
+ li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* TREATMENT PAGE END  */
+
+/* RISK PAGE START */
+
+.risk {
+  width: 40%; 
+  border: 2px solid rgb(49, 83, 151);
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+.risk {
+  padding: 20px;
+}
+
+.risk_heading {
+  font-size: 1.2em;
+  color: #333;
+}
+.risk_heading strong{
+  color:rgb(56, 161, 175);
+  font-size: 1.6em;
+  /* margin-right: 75%; */
+}
+.risk_heading .h22{
+  color:#1f57a0;
+  font-size:2em;
+}
+.risk_heading p{
+  font-size: 1.6em;
+}
+
+
+ li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.h20 li{
+  margin-left:7%;
+  font-size: 1.5em;
+  list-style-type: disc;
+  
+}
+/* RISK PAGE END  */
