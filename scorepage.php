@@ -56,22 +56,20 @@ font-size:xx-large;
 <body>
     <div class="form-container" style="margin:0 auto; margin-left: 27%;">
         <form>
-            <section class="sec-container">
+            <section class="sec-container" style="width:90%;height:90%;">
                 <section class="high_container" style=" background-color: #79A7D3;">
                     <div class="score">
                         <h2><br>Total Score: <span id="totalScoreDisplay"></span>of 10</h2>
-                        <h3>(LOW RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br><br>
+                        <h3>(LOW RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br>
                         <!-- <h3>Low predictions for prediabetes</h3> -->
-                        <a href="pointingpage.php">How Your Test is Scored</a><br><br>
+                        <a href="pointingpage.php?source=score">How Your Test is Scored</a><br><br>
                     </div>
-                </section>
-                        <br>
-                        <br>
+                </section><br>
                         <div class="score">
-                            <p style="font-size: 1.5em;">Based on your results, you’re at low risk for prediabetes. 
+                            <p style="font-size: 1.4em;">Based on your results, you’re at low risk for prediabetes. 
                                 Keep up the  good work! These healthy habits will help keep your risk low:
                             </p>
-                            <div class="centered_list">
+                            <div class="centered_list" style="font-size:1em;">
                                 <ul>
                                     <li>Get at least 150 minutes of physical activity a week.</li>
                                     <li>Keep your weight in a healthy range.</li>
@@ -79,16 +77,13 @@ font-size:xx-large;
                                     <li>Drink more water and fewer sugary drinks.</li>
                                     <li>Don’t smoke.</li>
                                 </ul>
-                            </div>
-                            <br>
-                            <br>
+                            </div><br><br>
                             <div class="hover_link">
-                                <a href="#" id="style-2" data-replace="About the risk test"><span>About the risk test</span></a><br><br>
-                                <a href="form.php" id="style-2" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
+                                <a href="#" id="style-2" style="color:#000;" data-replace="About the risk test"><span>About the risk test</span></a><br><br>
+                                <a href="form.php" id="style-2"  style="color:#000;" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
                                 </div>
                             <br>
-                            <br>
-                            <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>
+                            <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a><br><br>
                         </div>
               
             </section>

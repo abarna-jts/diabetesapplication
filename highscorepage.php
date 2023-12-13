@@ -78,13 +78,13 @@ $totalScore = $_GET['totalScore'] ?? 0;
 <body>
     <div class="form-container" style="margin:0 auto; margin-left: 27%;">
         <form>
-            <section class="sec-container">
+            <section class="sec-container" style="width:90%;">
                 <!-- Your form content for scorepage.html -->
                 <section class="high_container"  style=" background-color: #79A7D3;">
                     <div class="score">
                         <h2><br>Total Score: <span id="totalScoreDisplay"></span> of 10</h2>   
-                        <h3>(HIGH RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br><br>
-                        <a href="pointingpage.php">How Your Test is Scored</a>
+                        <h3>(HIGH RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br>
+                        <a href="pointingpage.php?source=highscore">How Your Test is Scored</a>
                     </div>
                 </section>
                     <br>
@@ -94,12 +94,10 @@ $totalScore = $_GET['totalScore'] ?? 0;
                             doctor can diagnose it for sure. Share your results with your doctor 
                             and ask for a simple blood test to confirm them.
                         </p>
-                        <br><br>
+                        <br>
                         <button class="custom-btn btn-4" onclick="printScore()">Print Your Result</button>
                         <button class="custom-btn btn-5" onclick="">Email Your result</button>
 
-                    <br>
-                    <br>
                     <br>
                     <br>
                     <div class="hover_link">
@@ -108,7 +106,6 @@ $totalScore = $_GET['totalScore'] ?? 0;
                     </div>
                     <!-- <a href="about.html" class="link"  style="font-size: 1.4em;">About the risk test</a><br><br> -->
                     <!-- <a href="email.html" class="link"  style="font-size: 1.4em;">Invite you friends and family to take the test</a> -->
-                    <br>
                     <br>
                     
                     <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>

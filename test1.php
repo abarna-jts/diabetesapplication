@@ -50,7 +50,7 @@
             <div class="form-container" style="margin-right:10%; margin-top: 1.30%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                        <!-- <img src="images\family.jpg" style="width:40vh;height:60%;border-radius: 50%;"> -->
+                        <img src="images\famil-img2.png" style="width:40vh;height:60%;margin-top:60%;">
                     </section>
                 </form>
             </div>

@@ -9,10 +9,11 @@
             <form class="myform" id="scorePage">
                 <section class="sec-container">
                     <div class="testpoint">
-                        <a href="scorepage.html">&#8592; Back To Score page</a>
+                    <a href="<?php echo $link; ?>">&#8592;Back To Score page</a>
                         <h1>How Your Test is Scored?</h1>
                         <p>Points for each risk factor below were added up to calculate your score. 
-                            For example, if you answered yes to the question “Do you have a mother, father, sister, or brother with diabetes?” you scored 1 point for Family History. If you answered no to the question “Have you ever been diagnosed with high blood pressure?” you scored 0 points for High Blood Pressure, and so on for all the risk factors. A total of 5 points or higher is considered high risk for having prediabetes.</p>
+                            For example, if you answered yes to the question “Do you have a mother, father, sister, or brother with diabetes?” you scored 1 point for Family History. If you answered no to the question “Have you ever been diagnosed with high blood pressure?” you scored 0 points for High Blood Pressure, and so on for all the risk factors. A total of 5 points or higher is considered high risk for having prediabetes.
+                        </p>
                         <br>
                         <p class="tittle">Family</p>
                         <p>Yes: 1 point
@@ -92,5 +93,21 @@
                 </section>
             </form>
         </div>
+        <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const source = urlParams.get('source');
+
+        // Check the source and redirect accordingly
+        if (source === 'highscore') {
+            // Redirect to highscorepage.html
+            document.querySelector('a').href = 'highscorepage.php';
+        } else {
+            // Default to scorepage.html
+            document.querySelector('a').href = 'scorepage.php';
+        }
+    });
+</script>
     </body>
 </html>
