@@ -21,13 +21,13 @@
             <div class="form-container" style="margin-left:20%;">
                 <form>
                     <section class="sec-container">
-                        <p>Do you have a mother, father, sister, or brother with diabetes?</p>
+                        <p  style="margin-top:15%;">Do you have a mother, father, sister, or brother with diabetes?</p>
                         <p class="small">A family history of diabetes could contribute to your risk for type 2 diabetes.</p>
                         <div class="radio-group">
                             <label class="yes">
                                   <input type="radio" name="family-history" value="yes" required>
                                 Yes<br><br>
-                                <input type="radio" name="family-history" value="no" required>No
+                                <input type="radio" name="family-history" value="no" required>No<br><br><br><br>
                             </label>
                         </div>
                         <p>Have you ever been diagnosed with high blood pressure?</p>
@@ -50,7 +50,7 @@
             <div class="form-container" style="margin-right:10%; margin-top: 1.30%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                        <img src="images\famil-img2.png" style="width:40vh;height:60%;margin-top:60%;">
+                        <img src="images\famil-img2.png" style="width:40vh;height:60%;margin-top:30%;">
                     </section>
                 </form>
             </div>
@@ -89,7 +89,7 @@
             
                 function NextPage() {
                     // Change the URL to the desired page (test2.html)
-                    window.location.href = 'test2.html';
+                    window.location.href = 'test2.php';
                 }
                 function calculateScore() {
                     var familyHistoryValue = document.querySelector('input[name="family-history"]:checked').value;

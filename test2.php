@@ -16,7 +16,7 @@
             <div class="form-container" style="margin-left:20%;">
                 <form>
                     <section class="sec-container">
-                        <p>How old are you?</p>
+                        <p style="margin-top:20%;">How old are you?</p>
                         <p class="small">You are at a higher risk for type 2 diabetes the older you are.</p>
                         <div class="radio-group">
                             <label class="yes">
@@ -42,7 +42,7 @@
              <div class="form-container" style="margin-right:30%; margin-top: 2%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                    <img src="images\age-img.png" style="width:40vh;height:60%;margin-top:60%;">
+                    <img src="images\age-img.png" style="width:40vh;height:60%;margin-top:30%;">
                     </section>
                 </form>
             </div>

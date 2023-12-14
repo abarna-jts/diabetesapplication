@@ -16,7 +16,7 @@
             <div class="form-container" style="margin-left:20%;">
                 <form onsubmit="submitForm3()">
                     <section class="sec-container">
-                        <p>What race or ethnicity best describes you?</p>
+                        <p style="margin-top:20%;">What race or ethnicity best describes you?</p>
                         <p class="small1">People of certain racial and ethnic groups are more likely to develop type 2 
                             diabetes than others.</p>
                         <div class="radio-group">
@@ -45,7 +45,7 @@
             <div class="form-container" style="margin-right:30%; margin-top: 2%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                    <img src="images\global.png" style="width:40vh;height:60%;margin-top:60%;">
+                    <img src="images\global.png" style="width:40vh;height:60%;margin-top:35%;">
                     </section>
                 </form>
             </div>

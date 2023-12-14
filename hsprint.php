@@ -1,7 +1,3 @@
-<?php
-$totalScore = $_GET['totalScore'] ?? 0; 
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,6 +11,10 @@ $totalScore = $_GET['totalScore'] ?? 0;
         font-size: 2.5em;
     }
     .hover_link a{
+        font-size: large;
+        color:#000;
+    }
+    a{
         font-size: large;
         color:#000;
     }
@@ -42,9 +42,6 @@ $totalScore = $_GET['totalScore'] ?? 0;
         font-size:2.4em;
     }
     .score{
-        font-size: 1.4em;
-    }
-    .score a{
         font-size: 1.4em;
     }
   ul {
@@ -78,13 +75,13 @@ $totalScore = $_GET['totalScore'] ?? 0;
 <body>
     <div class="form-container" style="margin:0 auto; margin-left: 27%;">
         <form>
-            <section class="sec-container" style="width:90%;">
+            <section class="sec-container">
                 <!-- Your form content for scorepage.html -->
                 <section class="high_container"  style=" background-color: #79A7D3;">
                     <div class="score">
                         <h2><br>Total Score: <span id="totalScoreDisplay"></span> of 10</h2>   
-                        <h3>(HIGH RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br>
-                        <a href="pointingpage.php?source=highscore">How Your Test is Scored</a>
+                        <h3>(HIGH RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br><br>
+                        <a href="pointingpage.php">How Your Test is Scored</a>
                     </div>
                 </section>
                     <br>
@@ -94,24 +91,25 @@ $totalScore = $_GET['totalScore'] ?? 0;
                             doctor can diagnose it for sure. Share your results with your doctor 
                             and ask for a simple blood test to confirm them.
                         </p>
-                        <br>
-                        <button type="button" class="custom-btn btn-4" onclick="printFile()">Print Your Result</button>
-                        <button type="button" class="custom-btn btn-5" onclick="NextPage()">Email Your result</button>
+                        <br><br>
+                        <button class="custom-btn btn-4" onclick="printScore()">Print Your Result</button>
+                        <button class="custom-btn btn-5" onclick="">Email Your result</button>
 
+                    <br>
+                    <br>
                     <br>
                     <br>
                     <div class="hover_link">
                     <a href="#" id="style-2" data-replace="About the risk test"><span>About the risk test</span></a><br><br>
-                    <a href="form.php?totalScore=<?php echo $totalScore; ?>" id="style-2" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
+                    <a href="form.php" id="style-2" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
                     </div>
                     <!-- <a href="about.html" class="link"  style="font-size: 1.4em;">About the risk test</a><br><br> -->
                     <!-- <a href="email.html" class="link"  style="font-size: 1.4em;">Invite you friends and family to take the test</a> -->
                     <br>
+                    <br>
                     
                     <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>
                 </div>
-        
-
             </section>
         </form>
     </div>
@@ -128,38 +126,14 @@ $totalScore = $_GET['totalScore'] ?? 0;
             return decodeURIComponent(results[2].replace(/\+/g, ' '));
         }
         var totalScore = getParameterByName('totalScore');
-        
+
         // Display totalScore in the designated element
         document.getElementById('totalScoreDisplay').innerText = totalScore;
+      
+
         // Function to print the score, total score, and prediction
-        // function printScore() {
-        //     window.print();
-        // }
-        function NextPage() {
-                    // Change the URL to the desired page (test2.html)
-                    window.location.href = 'form.php';
-        }
-        function printFile() {
-        // Create a hidden iframe
-        var iframe = document.createElement('iframe');
-        iframe.style.display = 'none';
-        document.body.appendChild(iframe);
+        
 
-        fetch('hsprint.php')
-            .then(response => response.text())
-            .then(html => {
-                // Load the HTML content into the iframe
-                iframe.contentDocument.write(html);
-                iframe.contentDocument.close();
-
-                // Print the content
-                iframe.contentWindow.print();
-            })
-            .catch(error => {
-                console.error('Error fetching risktest.php:', error);
-            });
-    
-    }
             // // Open the print dialog
             
     </script>

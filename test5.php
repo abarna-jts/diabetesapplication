@@ -19,7 +19,7 @@
             <div class="form-container" style="margin-left:20%;">
                 <form>
                     <section class="sec-container">
-                        <p>Are you a man or a woman?</p>
+                        <p style="margin-top:25%;">Are you a man or a woman?</p>
                         <p class="small1">Men are more likely than women to have undiagnosed diabetes; 
                             one reason may be that they are less likely to see their doctor regularly.</p>
                         <div class="radio-group">
@@ -56,7 +56,7 @@
             <div class="form-container" style="margin-right:30%; margin-top: 2%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                    <img src="images\gender-img.png" style="width:50vh;height:40%;margin-top:80%;margin-left:-15%;">
+                    <img src="images\dnagender.webp" style="width:110%;height:60%;margin-top:30%;margin-left:-5%;">
                     </section>
                 </form>
             </div>

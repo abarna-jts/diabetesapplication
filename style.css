@@ -243,6 +243,115 @@ input[type="radio" i] {
     padding:initial;
     border:initial;
 }
+/* .slide{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  background-color: rgb(59, 85, 134);
+  color:#fff;
+  font-size: 1.4em;
+  margin-left:23%;
+  border: 1px solid #000;
+  position: relative; 
+  border-radius: 4px;
+}
+.slide:after{
+  content:"Take the Test";
+  position:relative;
+  width:100%;
+  height:100%;
+ left:0;
+  text-align:center;
+ transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:before {
+  content:"Start →";
+  height:100%;
+  width:100%;
+  position:relative;
+  color:#383736;
+  left:-100%;
+  opacity: 0;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:hover{
+  background:#fff;
+  color:#000;
+}
+
+.slide:hover:before{
+  left:0;
+  opacity:1;
+  color:#000;
+}
+.slide:hover:after{
+  left:100%;
+  opacity:0;
+} */
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:40%;
+  height: 5vh;
+  background-color: rgb(59, 85, 134);
+  color: #fff;
+  font-size: 1.5em;
+  margin-left: 23%;
+  margin-top: -5%;
+  border: 1px solid #6bcdda;
+  border-radius: 20px;
+  position: relative; /* Add this line */
+}
+
+.slide:after {
+  margin-top: 15%;
+  content:"Take the Test";
+  position:relative;
+  font-size: 1.3em;
+  font-family:'Times New Roman', Times, serif;
+  width:100%;
+  height:100%;
+ left:0;
+  text-align:center;
+ transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.slide:before {
+  margin-top: 15%;
+  content: "Start →";
+  height: 100%;
+  width: 100%;
+  font-size: 1.3em;
+  font-family:'Times New Roman', Times, serif;
+  position: absolute;
+  
+  left: -100%;
+  opacity: 0;
+  transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+.slide:hover {
+  background: #d4e8f5;
+  color: #000;
+}
+
+.slide:hover:before {
+  left: 0;
+  opacity: 1;
+  color: rgb(13, 57, 138);
+}
+
+.slide:hover:after {
+  left: 100%;
+  opacity: 0;
+}
+
+
+
 .close-button {
     outline: 0;
     grid-gap: 8px;

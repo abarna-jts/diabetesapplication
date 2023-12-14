@@ -11,6 +11,7 @@
             margin-bottom: 20%; /* Adjust the value as needed */
             }
         }
+        
         </style>
     </head>
     <body>
@@ -37,21 +38,41 @@
                     <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
                     <a href="test1.html">Take the Test</a>
                   </div> -->
-                    <a href="test1.php" class="btntype" style="text-decoration: none;"><button class="styled-button" id="button-7">Take the Test</button></a>
+                  <button type="button" class="slide" onclick="NextPage()">&nbsp;</button><br><br><br>
                 <a target="_blank" onclick="printFile()">Print a copy the test to take later</a><br>
                 <a href="about.php">About the Prediabetes Risk Test</a>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
     <script>
         function printFile() {
-            var printWindow = window.open('risktest.php', '_blank');
-            printWindow.onload = function () {
-                printWindow.print();
-            };
-        }
+        // Create a hidden iframe
+        var iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+
+        fetch('risktest.php')
+            .then(response => response.text())
+            .then(html => {
+                // Load the HTML content into the iframe
+                iframe.contentDocument.write(html);
+                iframe.contentDocument.close();
+
+                // Print the content
+                iframe.contentWindow.print();
+            })
+            .catch(error => {
+                console.error('Error fetching risktest.php:', error);
+            });
+    
+    }
+    
+        function NextPage() {
+                    // Change the URL to the desired page (test2.html)
+                    window.location.href = 'test1.php';
+                }
     </script>
 </html>

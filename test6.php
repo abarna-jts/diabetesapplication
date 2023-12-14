@@ -10,6 +10,7 @@
                 font-size: 1.6em;
                 margin: 0 auto;
             }
+            
         </style>
     </head>
     <body>
@@ -17,7 +18,7 @@
             <div class="form-container" style="margin-left:20%;">
                 <form action="#" method="post">
                     <section class="sec-container">
-                        <p>How tall are you?</p>
+                        <p style="margin-top:20%;">How tall are you?</p>
                         <p class="small1">The combination of your weight and height lets us know your 
                             Body Mass Index or BMI. People with higher BMIs are at a higher risk.</p>
                             <ul class="no_bullet select">
@@ -63,7 +64,7 @@
                             <br>
 
                             <div id="validationMessage"></div><br><br>
-                        <a href="test5.html">
+                        <a href="test5.php">
                             <button type="button" class="close-button">Previous</button>
                         </a>
                             <button type="button" class="close-button" onclick="validateForm()">See Your Results</button><br>
@@ -74,7 +75,7 @@
             <div class="form-container" style="margin-right:30%; margin-top: 2%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                    <!-- <img src="images\h1.png" style="width:40vh;height:60%;margin-top:60%;"> -->
+                    <!-- <img src="images\h1.png" style="width:40vh;height:60%;margin-top:30%;"> -->
                     </section>
                 </form>
             </div>

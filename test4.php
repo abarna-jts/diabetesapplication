@@ -16,7 +16,7 @@
             <div class="form-container" style="margin-left:20%;">
                 <form>
                     <section class="sec-container">
-                        <p>Are you physically active?</p>
+                        <p style="margin-top:25%;">Are you physically active?</p>
                         <p class="small">Being inactive can increase your risk for type 2 diabetes.</p>
                         <div class="radio-group">
                             <label class="yes">
@@ -36,7 +36,7 @@
             <div class="form-container" style="margin-right:30%; margin-top: 2%;">
                 <form>
                     <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
-                    <img src="images\jocking.png" style="width:45vh;height:65%;margin-top:60%;">
+                    <img src="images\jocking.png" style="width:45vh;height:65%;margin-top:30%;">
                     </section>
                 </form>
             </div>

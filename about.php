@@ -6,6 +6,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Diabetes</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1.5s ease-in-out; /* Adjust the duration and easing as needed */
+}
+    </style>
 </head>
 
 <body> 
@@ -19,7 +33,12 @@
     <p>
     A person with a high score on the online risk test (five or higher) is at significant risk for having prediabetes. However, only a blood test can determine an official diagnosis.
     </p><br><br><br><br>
+    <button type="button" class="close-button"  onclick="NextPage()" style="margin-left:45%;" >Back</button><br>
     </div>
-    
+    <script>
+        function NextPage() {
+            window.location.href = 'index.php';
+        }
+    </script>
 </body>
 </html>
