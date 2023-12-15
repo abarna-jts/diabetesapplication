@@ -109,13 +109,10 @@
                     // Calculate the total score by adding individual scores
                     // Pass data to test2.html
                     console.log("score=" +score);
-                    window.location.href = 'test2.php?score1=' + score;
-                    
+                    window.location.href = 'test2.php?score1=' + score;  
                 }
                 
-
-
     </script>
-            
+          
     </body>
 </html>

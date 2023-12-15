@@ -85,12 +85,12 @@
                         <path fill-rule="evenodd" d="M1 4a.5.5 0 0 1 .5-.5h22.293l-6.147-6.146a.5.5 0 0 1 .708-.708l8 8a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708L23.293 4.5H1.5A.5.5 0 0 1 1 4"/>
                     </svg> -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="80" height="32" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 32 8" style="margin-left: 80%; margin-top: -10%; transform: scaleX(-1);">
-    <path fill-rule="evenodd" d="M1 4a.5.5 0 0 1 .5-.5h22.293l-6.147-6.146a.5.5 0 0 1 .708-.708l8 8a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708L23.293 4.5H1.5A.5.5 0 0 1 1 4"/>
-</svg>
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="64" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16" style="margin-left:58%;">
-  <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-</svg>
-<div class="border p-3 mb-3 border-primary " style="width: 20px;margin-left:60%;"></div>
+                    <path fill-rule="evenodd" d="M1 4a.5.5 0 0 1 .5-.5h22.293l-6.147-6.146a.5.5 0 0 1 .708-.708l8 8a.5.5 0 0 1 0 .708l-8 8a.5.5 0 0 1-.708-.708L23.293 4.5H1.5A.5.5 0 0 1 1 4"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="64" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16" style="margin-left:58%;">
+                <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+                </svg>
+                <div class="border p-3 mb-3 border-primary " style="width: 20px;margin-left:60%;"></div>
 
 
 

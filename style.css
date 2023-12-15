@@ -39,6 +39,7 @@ body{
 .header .logo img{
     margin:4%;
     width:35%;
+    margin-left:-40%;
     height:35%;
     border-radius: 50%;
 }
@@ -60,7 +61,6 @@ body{
     margin-left: auto;
     
 }
-
 
 .header .navbar a:hover{       
     color: #ffffff;
@@ -128,12 +128,14 @@ body{
     justify-content: center;
     margin-left: 27%;
     width:90vh;
-    height: 45vh; 
-    background-color: #79A7D3;
+    height: 45vh;
+    border:1px solid #79A7D3;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(1, 8, 48, 0.2), 0 6px 20px 0 rgba(1, 8, 48, 0.2);
 }
 .container .heading-text h2 {
     font-size: 3.2em;
-    color: #ffffff;
+    color: #3372ad;
     position:relative;
 }
 
@@ -162,13 +164,13 @@ body{
 .container a{
     text-decoration: none;
     font-size: 2em;
-    color: #ffffff;
+    color: #3372ad;
     display: flex; /* Ensure it's a block-level element */
     margin: 0% auto 0% 13%; 
 }
 .container a:hover{
     text-decoration: underline;
-    color:#114c86;
+    color:#3372ad;
 }
       /* test1 styles */
 .overlay {
@@ -185,8 +187,8 @@ body{
 }
 .form-container {
     background-color: #e2f8f8;
-    width:120vh;
-    height:80vh;
+    width:100vh;
+    height:0vh;
     border-radius: 5px;
     text-align: center;
     flex: 1;
@@ -199,7 +201,7 @@ body{
     width:80vh;
     height:80vh;
     margin-top: 10%;
-    
+    box-shadow: 0 4px 8px 0 rgba(1, 8, 48, 0.2), 0 6px 20px 0 rgba(1, 8, 48, 0.2);
 }
 
 .form-container-wrapper {
@@ -350,8 +352,6 @@ input[type="radio" i] {
   opacity: 0;
 }
 
-
-
 .close-button {
     outline: 0;
     grid-gap: 8px;
@@ -489,8 +489,6 @@ ul {
     height: 100%;
     width: 100%;
   }
-
-
 
  .hover_link a {
     overflow: hidden;
@@ -694,7 +692,6 @@ ul {
   position: relative;
   margin: auto;
 }
-
 
 .prev, .next {
   cursor: pointer;
@@ -902,7 +899,6 @@ a {
   font-size: 1.6em;
 }
 
-
  li {
   list-style: none;
   margin-bottom: 10px;
@@ -939,7 +935,6 @@ a {
 .treatment_heading p{
   font-size: 1.6em;
 }
-
 
  li {
   list-style: none;
@@ -978,7 +973,6 @@ a {
   font-size: 1.6em;
 }
 
-
  li {
   list-style: none;
   margin-bottom: 10px;
@@ -986,7 +980,7 @@ a {
 .h20 li{
   margin-left:7%;
   font-size: 1.5em;
-  list-style-type: disc;
-  
+  list-style-type: disc;  
+  color:#dfdada;
 }
 /* RISK PAGE END  */

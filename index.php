@@ -40,7 +40,7 @@
                   </div> -->
                   <button type="button" class="slide" onclick="NextPage()">&nbsp;</button><br><br><br>
                 <a target="_blank" onclick="printFile()">Print a copy the test to take later</a><br>
-                <a href="about.php">About the Prediabetes Risk Test</a>
+                <a href="about.php" style="color:#3372ad;">About the Prediabetes Risk Test</a>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
@@ -75,4 +75,13 @@
                     window.location.href = 'test1.php';
                 }
     </script>
+    <script>
+    // Use the History API to push a new state and prevent going back to the index.php page
+    history.pushState(null, null, document.URL);
+    
+    // Event listener to handle the back button
+    window.addEventListener('popstate', function () {
+      history.pushState(null, null, document.URL);
+    });
+  </script>  
 </html>

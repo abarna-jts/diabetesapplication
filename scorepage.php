@@ -4,11 +4,12 @@
     <link rel="stylesheet" href="style.css">
    <style>
     h2{
-font-size:xx-large;
+font-size:3em;
+color:rgb(15, 48, 141);
     }
     .score h3{
         display: inline;
-        color:rgb(15, 48, 141);
+        color:#409240;
         font-size: 2.5em;
     }
     a{
@@ -34,6 +35,9 @@ font-size:xx-large;
   .score{
     font-size: 1.4em;
   }
+  .score a{
+    color:rgb(15, 48, 141);
+  }
   ul {
     list-style-type: none;
     display: inline-block;
@@ -57,10 +61,10 @@ font-size:xx-large;
     <div class="form-container" style="margin:0 auto; margin-left: 27%;">
         <form>
             <section class="sec-container" style="width:90%;height:90%;">
-                <section class="high_container" style=" background-color: #79A7D3;">
+                <section class="high_container" style=" background-color: #ccc;">
                     <div class="score">
-                        <h2><br>Total Score: <span id="totalScoreDisplay"></span>of 10</h2>
-                        <h3>(LOW RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br>
+                        <h2><br>Total Score: <span id="totalScoreDisplay" style="color:#409240;"></span> of 10</h2>
+                        <h3 style="color:rgb(15, 48, 141)">(</h3><h3>LOW RISK</h3><h3 style="color:rgb(15, 48, 141)"> FOR PREDIABETES)</h3><br><br>
                         <!-- <h3>Low predictions for prediabetes</h3> -->
                         <a href="pointingpage.php?source=score">How Your Test is Scored</a><br><br>
                     </div>

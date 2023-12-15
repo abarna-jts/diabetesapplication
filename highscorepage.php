@@ -7,11 +7,11 @@ $totalScore = $_GET['totalScore'] ?? 0;
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-   <style>
-    
+
+    <style>
     .score h3{
         display: inline;
-        color:rgb(15, 48, 141);
+        color:#c95c5c;
         font-size: 2.5em;
     }
     .hover_link a{
@@ -19,7 +19,7 @@ $totalScore = $_GET['totalScore'] ?? 0;
         color:#000;
     }
     a:hover{
-        color:rgb(29, 66, 168);
+         color:rgb(29, 66, 168);
     }
     p{
         font-size:2.2em;
@@ -33,13 +33,13 @@ $totalScore = $_GET['totalScore'] ?? 0;
         font-size:medium;
     }
     li::before {
-    content: "\2713"; /* Unicode character for checkmark */
-    margin-right: 5px; /* Adjust spacing between checkmark and text */
-    color: green; /* Set color of the checkmark */
-  }
-  .score h2{
-   
-        font-size:2.4em;
+        content: "\2713"; /* Unicode character for checkmark */
+        margin-right: 5px; /* Adjust spacing between checkmark and text */
+        color: green; /* Set color of the checkmark */
+    }
+    .score h2{
+        color:rgb(15, 48, 141);
+        font-size:2.8em;
     }
     .score{
         font-size: 1.4em;
@@ -47,32 +47,30 @@ $totalScore = $_GET['totalScore'] ?? 0;
     .score a{
         font-size: 1.4em;
     }
-  ul {
-    list-style-type: none;
-    display: inline-block;
-  }
-  .link{
-    font-size: 1.1em;
-  }
-  .centered-list {
-    text-align: center;
-    margin-left: 20%;
-  }
-  .high_container{
-    width:90%;
-    margin:0 auto;
-    height:30%;
-    background-color: rgb(153, 199, 212);
-  }
-  .zoom-effect {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        /* Apply the initial scale */
-        .zoom-effect:hover {
-            transform: scale(1.2); /* Adjust the scale factor as needed */
-        }
-      
+        
+    ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+    .link{
+        font-size: 1.1em;
+    }
+    .centered-list {
+        text-align: center;
+        margin-left: 20%;
+    }
+    .high_container{
+        width:90%;
+        margin:0 auto;
+        height:30%;
+        background-color: rgb(153, 199, 212);
+    }
+    .zoom-effect {
+        transition: transform 0.3s ease-in-out;
+    }
+    .zoom-effect:hover {
+        transform: scale(1.2); /* Adjust the scale factor as needed */
+    }      
    </style>
 </head>
 <body>
@@ -80,11 +78,11 @@ $totalScore = $_GET['totalScore'] ?? 0;
         <form>
             <section class="sec-container" style="width:90%;">
                 <!-- Your form content for scorepage.html -->
-                <section class="high_container"  style=" background-color: #79A7D3;">
+                <section class="high_container"  style=" background-color: #ccc;">
                     <div class="score">
-                        <h2><br>Total Score: <span id="totalScoreDisplay"></span> of 10</h2>   
-                        <h3>(HIGH RISK</h3><h3 style="color:#e2e2e2"> FOR PREDIABETES)</h3><br><br>
-                        <a href="pointingpage.php?source=highscore">How Your Test is Scored</a>
+                        <h2><br>Total Score: <span id="totalScoreDisplay" style="color:#c95c5c;"></span> of 10</h2>   
+                        <h3 style="color:rgb(15, 48, 141)">(</h3><h3>HIGH RISK</h3><h3 style="color:rgb(15, 48, 141);"> FOR PREDIABETES)</h3><br><br>
+                        <a href="pointingpage.php?source=highscore" style="color:rgb(15, 48, 141);">How Your Test is Scored</a>
                     </div>
                 </section>
                     <br>
@@ -110,8 +108,6 @@ $totalScore = $_GET['totalScore'] ?? 0;
                     
                     <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>
                 </div>
-        
-
             </section>
         </form>
     </div>
@@ -158,10 +154,7 @@ $totalScore = $_GET['totalScore'] ?? 0;
             .catch(error => {
                 console.error('Error fetching risktest.php:', error);
             });
-    
-    }
-            // // Open the print dialog
-            
+        }        
     </script>
 
 </body>
