@@ -25,6 +25,7 @@
                     <li><a href="./Hospital.php">Hospital</a></li>
                     <li><a href="./discharge.php">Discharge</a></li>
                     <li><a href="./Summary1.php">Summary</a></li>
+                    <li><a href="./dplan.php">Diet Plan</a></li>
                     <li><a href="./history.php">History of Diabetes</a></li>  
                 </ul>
             </nav>    
@@ -39,8 +40,8 @@
                     <a href="test1.html">Take the Test</a>
                   </div> -->
                   <button type="button" class="slide" onclick="NextPage()">&nbsp;</button><br><br><br>
-                <a target="_blank" onclick="printFile()">Print a copy the test to take later</a><br>
-                <a href="about.php" style="color:#3372ad;">About the Prediabetes Risk Test</a>
+                <a target="_blank" style="color:rgb(10 76 153);" onclick="printFile()">Print a copy the test to take later</a><br>
+                <a href="about.php" style="color:rgb(10 76 153);">About the Prediabetes Risk Test</a>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 

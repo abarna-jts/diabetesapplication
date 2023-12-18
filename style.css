@@ -9,7 +9,7 @@ body{
   h1{
     text-align: center;
     font-size: 3.7em;
-    color: rgb(10 76 153);
+    color: #138b73;
   }
   /* header styles */
   .logo{
@@ -24,7 +24,7 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    background: #aaccec;    
+    background: #53c4ba;
 }
 
 
@@ -93,7 +93,7 @@ body{
     font-size: 2.1em;
     margin-left: 1.5em;
     text-decoration: none;
-    color: rgb(2, 67, 141);
+    color: #fff;
     position: relative;
     overflow: hidden;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -129,13 +129,13 @@ body{
     margin-left: 27%;
     width:90vh;
     height: 45vh;
-    border:1px solid #79A7D3;
+    border:2px solid #53c4ba;
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(1, 8, 48, 0.2), 0 6px 20px 0 rgba(1, 8, 48, 0.2);
 }
 .container .heading-text h2 {
     font-size: 3.2em;
-    color: #3372ad;
+    color: rgb(10 76 153);
     position:relative;
 }
 
@@ -195,7 +195,7 @@ body{
 
 }
 .form-container .sec-container{
-    border: 2px solid #79A7D3; 
+    border: 2px solid #53c4ba; 
     position: relative;
     border-radius: 5px; 
     width:80vh;
@@ -299,7 +299,7 @@ input[type="radio" i] {
   justify-content: center;
   width:40%;
   height: 5vh;
-  background-color: rgb(59, 85, 134);
+  background-color: #16a085;
   color: #fff;
   font-size: 1.5em;
   margin-left: 23%;
@@ -337,7 +337,7 @@ input[type="radio" i] {
 }
 
 .slide:hover {
-  background: #d4e8f5;
+  background: #caf3eb;
   color: #000;
 }
 
@@ -356,7 +356,7 @@ input[type="radio" i] {
     outline: 0;
     grid-gap: 8px;
     align-items: center;
-    background-color: #79A7D3;
+    background-color: #ccc;
     color: #1b1b1b;
     border: 1px solid #000;
     border-radius: 4px;
@@ -395,7 +395,7 @@ ul {
     width: 130px;
     height: 40px;
     padding: 10px 25px;
-    border: 2px solid rgb(23, 171, 197);
+    border: 2px solid #16a085;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -429,20 +429,20 @@ ul {
      left: 0;
      border-bottom-color: transparent;
      border-right-color: transparent;
-     border-top-color: rgb(0, 163, 192);
-     border-left-color: rgb(0, 163, 192);
+     border-top-color: #16a085;
+     border-left-color: #16a085;
   }
   .btn-4:after{
      bottom: 0;
      right: 0;
      border-top-color: transparent;
      border-left-color: transparent;
-     border-bottom-color: rgb(0, 163, 192);
-     border-right-color: rgb(0, 163, 192);
+     border-bottom-color: #16a085;
+     border-right-color: #16a085;
   }
   .btn-4:hover:before,
   .btn-4:hover:after {
-    border-color: rgb(0, 163, 192);
+    border-color: #16a085;
     height: 100%;
     width: 100%;
   }
@@ -472,20 +472,20 @@ ul {
      left: 0;
      border-bottom-color: transparent;
      border-right-color: transparent;
-     border-top-color: rgb(0, 163, 192);
-     border-left-color: rgb(0, 163, 192);
+     border-top-color: #16a085;
+     border-left-color: #16a085;
   }
   .btn-5:after{
      bottom: 0;
      right: 0;
      border-top-color: transparent;
      border-left-color: transparent;
-     border-bottom-color: rgb(0, 163, 192);
-     border-right-color: rgb(0, 163, 192);
+     border-bottom-color: #16a085;
+     border-right-color: #16a085;
   }
   .btn-5:hover:before,
   .btn-5:hover:after {
-    border-color: rgb(0, 163, 192);
+    border-color: #16a085;
     height: 100%;
     width: 100%;
   }
@@ -504,7 +504,7 @@ ul {
     left: 0;
   }
   .hover_link a::before {
-    background-color: #2f6597;
+    background-color: #16a085;
     height: 2px;
     bottom: 0;
     transform-origin: 100% 50%;
@@ -518,7 +518,7 @@ ul {
     transform-origin: 100% 50%;
     transform: translate3d(200%, 0, 0);
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-    color: #2f6597;
+    color: #16a085;
   }
   
   .hover_link a:hover::before {
@@ -981,6 +981,6 @@ a {
   margin-left:7%;
   font-size: 1.5em;
   list-style-type: disc;  
-  color:#dfdada;
+  background: #292727;
 }
 /* RISK PAGE END  */

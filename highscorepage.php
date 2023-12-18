@@ -45,6 +45,11 @@ $totalScore = $_GET['totalScore'] ?? 0;
         font-size: 1.4em;
     }
     .score a{
+        color:rgb(15, 48, 141);
+        font-size: 1.4em;
+    }
+    .score a:hover{
+        color:#16a085;
         font-size: 1.4em;
     }
         
@@ -82,7 +87,7 @@ $totalScore = $_GET['totalScore'] ?? 0;
                     <div class="score">
                         <h2><br>Total Score: <span id="totalScoreDisplay" style="color:#c95c5c;"></span> of 10</h2>   
                         <h3 style="color:rgb(15, 48, 141)">(</h3><h3>HIGH RISK</h3><h3 style="color:rgb(15, 48, 141);"> FOR PREDIABETES)</h3><br><br>
-                        <a href="pointingpage.php?source=highscore" style="color:rgb(15, 48, 141);">How Your Test is Scored</a>
+                        <a href="pointingpage.php?source=highscore">How Your Test is Scored</a>
                     </div>
                 </section>
                     <br>

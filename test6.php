@@ -62,7 +62,6 @@
                             <br>
                             <br>
                             <br>
-
                             <div id="validationMessage"></div><br><br>
                         <a href="test5.php">
                             <button type="button" class="close-button">Previous</button>
@@ -74,7 +73,7 @@
             </div>
             <div class="form-container" style="margin-right:30%; margin-top: 2%;">
                 <form>
-                    <section class="sec-container" style="background-color: #79A7D3; width:40vh;">
+                    <section class="sec-container" style="background-color: #53c4ba; width:40vh;">
                     <img src="images\weight-img1.png" style="width:40vh;height:60%;margin-top:30%;">
                     </section>
                 </form>
