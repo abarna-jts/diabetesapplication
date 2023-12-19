@@ -1,7 +1,6 @@
 <?php
 $totalScore = $_GET['totalScore'] ?? 0; 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -100,18 +99,17 @@ $totalScore = $_GET['totalScore'] ?? 0;
                         <br>
                         <button type="button" class="custom-btn btn-4" onclick="printFile()">Print Your Result</button>
                         <button type="button" class="custom-btn btn-5" onclick="NextPage()">Email Your result</button>
-
                     <br>
                     <br>
                     <div class="hover_link">
-                    <a href="#" id="style-2" data-replace="About the risk test"><span>About the risk test</span></a><br><br>
+                    <a href="about.php" id="style-2" data-replace="About the risk test"><span>About the risk test</span></a><br><br>
                     <a href="form.php?totalScore=<?php echo $totalScore; ?>" id="style-2" data-replace="Invite your friends and family to take the test"><span>Invite your friends and family to take the test</span></a><br><br>
                     </div>
                     <!-- <a href="about.html" class="link"  style="font-size: 1.4em;">About the risk test</a><br><br> -->
                     <!-- <a href="email.html" class="link"  style="font-size: 1.4em;">Invite you friends and family to take the test</a> -->
                     <br>
                     
-                    <a href="index.php" style="color:rgb(250, 250, 250); text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>
+                    <a href="index.php" style="color:#000; text-decoration: none; font-size: 1.5em;" class="close-button">Take again</a>
                 </div>
             </section>
         </form>

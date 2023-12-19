@@ -2,48 +2,155 @@
 <html>
     <title>Diabetes Test Form</title>
     <head>   
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <style>
-                    @media (min-width: 576px) {
-            /* Adjust the top position for larger screens (sm and up) */
-            .custom-h2 {
-            margin-bottom: 20%; /* Adjust the value as needed */
+                   
+            body{
+                font-family:'Times New Roman', Times, serif;
+            } 
+            .navbar .navbar-collapse .navbar-nav .nav-item a{
+                font-size:20px;
+                margin-left: 1.5em;
+                position: relative;
+                transition: color 0.3s ease, transform 0.3s ease;
+                text-decoration: none;
             }
+            .navbar .navbar-collapse .navbar-nav .nav-item a:hover{
+                color: #000; 
+                transform: scale(1.1); 
+            }
+            .navbar .navbar-collapse .navbar-nav .nav-item a::after{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #ffffff; 
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s ease;
+            }
+            .navbar .navbar-collapse .navbar-nav .nav-item:hover a::after{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+            .navbar .navbar-brand img{
+                width:35%;
+                height:35%;
+                border-radius: 50%;
+            }
+            .sliding {
+            width: 30%;
+            height: 5vh;
+            background-color: #16a085;
+            color: #fff;
+            border: 1px solid #6bcdda;
+            border-radius: 20px;
+            position: relative;
+            
         }
-        
+
+        .sliding:after {
+            margin-top: 15%;
+            content: "Take the Test";
+            position: relative;
+            font-size: 1.3em;
+            font-family: 'Times New Roman', Times, serif;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: all 400ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .sliding:before {
+            content: "Start →";
+            height: 100%;
+            width: 100%;
+            font-size: 1.3em;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            left: -100%;
+            text-align: center;
+            opacity: 0;
+            transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .sliding:hover {
+            background: #caf3eb;
+           
+        }
+
+        .sliding:hover:before {
+            left: 0;
+            opacity: 1;
+            color: rgb(13, 57, 138);
+        }
+
+        .sliding:hover:after {
+            left: 10%;
+            opacity: 0;
+            
+        }
+        .container .row{
+            border:2px solid #53c4ba;
+            box-shadow: 0 4px 8px 0 rgba(1, 8, 48, 0.2), 0 6px 20px 0 rgba(1, 8, 48, 0.2);
+        }
         </style>
     </head>
     <body>
-        <header class="header">
-            <div class="logo">
-                <img src="images/jorimlogo.jfif">
+            <nav class="custom-shadow navbar navbar-expand-lg navbar-light" style="background-color:#53c4ba;">
+                <a class="navbar-brand" href="#"><img src="images/jorimlogo.jfif"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" href="index.php" >Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Hospital.php" >Hospital</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="discharge.php" >Discharge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="Summary1.php" >Summary</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="dplan.php" >Diet Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="history.php" >History of Diabetes</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>  
+
+            <div class="container mt-5">
+                <h2 class="text-center font-weight-bold" style="color: #138b73;">Prediabetes is at high risk for type 2 Diabetes.</h2>
+                <h2 class="text-center font-weight-bold" style="color: #138b73;">How about You?</h2>
+
+                <div class="row border p-5">
+                    <div class="col-md-8 text-center" style="margin-left:15%;">
+                        <h2 class="font-weight-bold" style="color: rgb(10 76 153);">Could You Have Prediabetes?</h2><br><br>
+                        <button class="sliding" onclick="NextPage()" style="color:#fff;">&nbsp;</button><br><br><br>
+                        <a target="_blank" style="color:#3372ad;font-size: 1.2em;" href="#" onclick="printFile()">Print a copy of the test to take later</a><br>
+                        <a href="about.php" style="color:#3372ad;font-size: 1.2em;">About the Prediabetes Risk Test</a>
+                    </div>
+                </div>
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.php">Home</a></li>
-                    <li><a href="./Hospital.php">Hospital</a></li>
-                    <li><a href="./discharge.php">Discharge</a></li>
-                    <li><a href="./Summary1.php">Summary</a></li>
-                    <li><a href="./dplan.php">Diet Plan</a></li>
-                    <li><a href="./history.php">History of Diabetes</a></li>  
-                </ul>
-            </nav>    
-        </header>
-        <h1>Prediabetes is at high risk for type 2 Diabetes.</h1>
+        <!-- <h1>Prediabetes is at high risk for type 2 Diabetes.</h1>
         <h1>How about You?</h1>
         <div class="container">
             <div class="heading-text">
                 <h2 class="custom-h2">Could You Have Prediabetes?</h2>
-                <!-- <div class="button" id="button-7">
-                    <div id="dub-arrow"><img src="https://github.com/atloomer/atloomer.github.io/blob/master/img/iconmonstr-arrow-48-240.png?raw=true" alt="" /></div>
-                    <a href="test1.html">Take the Test</a>
-                  </div> -->
                   <button type="button" class="slide" onclick="NextPage()">&nbsp;</button><br><br><br>
                 <a target="_blank" style="color:rgb(10 76 153);" onclick="printFile()">Print a copy the test to take later</a><br>
                 <a href="about.php" style="color:rgb(10 76 153);">About the Prediabetes Risk Test</a>
             </div>
-        </div>
+        </div> -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

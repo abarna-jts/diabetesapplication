@@ -1,27 +1,80 @@
 <!DOCTYPE html>
 <html>
     <title>Diabetes Test Form</title>
-    <head>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <link rel="stylesheet" href="style.css">
+    <head>   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <style>
+             body{
+                font-family:'Times New Roman', Times, serif;
+            } 
+            p{
+                color:rgb(4, 47, 128);
+                font-size:1.4em;
+            }
+            .small{
+                font-size:1.16em; 
+                white-space: pre-line;
+                color:rgb(49, 83, 151);
+            }
+            label{
+                color:rgb(49, 83, 151);
+                font-size:1.19em;
+            }
+            .first{
+                
+                border:2px solid #53c4ba!important;
+                box-shadow: 0 4px 8px 0 rgba(1, 8, 48, 0.2), 0 6px 20px 0 rgba(1, 8, 48, 0.2);
+            }
             .sec-container #validationMessage{
                 color:red;
-                font-size: 1.6em;
+                font-size: 1.3em;
                 margin: 0 auto;
             }
+            .close-button {
+                outline: 0;
+                grid-gap: 8px;
+                align-items: center;
+                background-color: #ccc;
+                color: #1b1b1b;
+                border: 1px solid #000;
+                border-radius: 4px;
+                cursor: pointer;
+                display: inline-flex;
+                flex-shrink: 0;
+                font-size: 16px;
+                gap: 8px;
+                justify-content: center;
+                line-height: 1.5;
+                overflow: hidden;
+                padding: 8px 22px;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                transition: all .14s ease-out;
+                white-space: nowrap;
+            }
+            .close-button:hover {
+                box-shadow: 4px 4px 0 #000;
+                transform: translate(-4px,-4px);
+            }
+            .custom-select.custom-select-lg {
+        height: 5vh; /* Example height */
+        width: 50vh; /* Example width */
+    }
+    .custom-select-lg option {
+        height: 10vh; /* Example height */
+    }
             
         </style>
-    </head>
     <body>
-        <div class="form-container-wrapper">
-            <div class="form-container" style="margin-left:20%;">
-                <form action="#" method="post">
-                    <section class="sec-container">
-                        <p style="margin-top:20%;">How tall are you?</p>
-                        <p class="small1">The combination of your weight and height lets us know your 
+    <div class="container mt-5 text-center" >
+        <div class="row " style="margin-top:10%;width:130%;height:70vh;">
+            <!-- Left side form -->
+            <div class="first col-md-6 border p-3" >
+                <section class="sec-container">
+                    <p class="mt-4">How tall are you?</p>
+                    <p class="small">The combination of your weight and height lets us know your 
                             Body Mass Index or BMI. People with higher BMIs are at a higher risk.</p>
-                            <ul class="no_bullet select">
+                            <ul class="no_bullet select " style="list-style: none;">
                                 <li>
                                     <label for="height" style="visibility:hidden;">Select an option</label><br>
                                     <select name="height" id="height" class="custom-select custom-select-lg">
@@ -49,8 +102,9 @@
                                     </select>
                                 </li>
                             </ul>
+                            <br>
                             <p>Please select your weight.</p>
-                            <ul class="no_bullet select weight-options" id="weightOptions">
+                            <ul class="no_bullet select weight-options" id="weightOptions" style="list-style: none;margin-top:-5%;">
                                     <li>
                                         <label for="weight" style="visibility:hidden;">Select an option</label><br>
                                     <label for="weight" style="visibility:hidden;">Select weight</label><br>
@@ -60,115 +114,115 @@
                                 </li>
                             </ul>
                             <br>
-                            <br>
-                            <br>
-                            <div id="validationMessage"></div><br><br>
+                            <div id="validationMessage"></div><br>
                         <a href="test5.php">
                             <button type="button" class="close-button">Previous</button>
                         </a>
                             <button type="button" class="close-button" onclick="validateForm()">See Your Results</button><br>
-                        
-                    </section>
-                </form>
+                </section>
             </div>
-            <div class="form-container" style="margin-right:30%; margin-top: 2%;">
-                <form>
-                    <section class="sec-container" style="background-color: #53c4ba; width:40vh;">
-                    <img src="images\weight-img1.png" style="width:40vh;height:60%;margin-top:30%;">
-                    </section>
-                </form>
+
+            <!-- Right side form -->
+            <div class="second col-md-5" style="margin-left:-1.3%;">
+                <div class="form-container" style="background-color: #53c4ba; width:40vh;height:70vh;">
+                    <form>
+                        <section class="sec-container">
+                            <img src="images\weight-img1.png" class="img-fluid" style="margin-top:35%; width:80%;">
+                        </section>
+                    </form>
+                </div>
             </div>
         </div>
-            <script>
-function validateForm() {
-    var height = document.getElementById("height");
-        var weight = document.getElementById("weight");
+    </div>
 
+<!-- Optional: Add the Bootstrap JavaScript and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+<script>
+    function validateForm() {
+        var height = document.getElementById("height");
+        var weight = document.getElementById("weight");
         var heightValue = height.value;
         var weightValue = weight.value;
 
-        if (heightValue === "" || weightValue === "") {
+        if (heightValue === "" || weightValue === "null") {
             document.getElementById("validationMessage").innerText = "Please select both height and weight.";
             return;
         }
+        
         calculateTotalScore()
-
-
     }
 
     function calculateTotalScore() {
-    var heightSelect = $('#height');
-    var weightSelect = $('#weight');
+        var heightSelect = $('#height');
+        var weightSelect = $('#weight');
 
-    var heightValue = heightSelect.val();
-    var weightValue = weightSelect.val();
-    var score5 = calculateScore(heightValue, weightValue);
+        var heightValue = heightSelect.val();
+        var weightValue = weightSelect.val();
+        var score5 = calculateScore(heightValue, weightValue);
 
-    var score4 = parseInt(getParameterByName('score4')) || 0;
+        var score4 = parseInt(getParameterByName('score4')) || 0;
 
-    var totalScore = score4 + score5;
-    // Display total score
-    console.log("Total Score:", totalScore);
-   
+        var totalScore = score4 + score5;
+        console.log("Total Score:", totalScore);
     
-    if (totalScore < 5) {
-        window.location.href = 'scorepage.php?totalScore=' + totalScore;
-
-    } else {
-        // Redirect to highprediction.html
-        window.location.href = 'highscorepage.php?totalScore=' + totalScore;
-    }
-    
-}
-    
-function calculateScore(heightValue, weightValue) {
-    // Define scoring conditions based on height and weight values
-    var scoringInfo = {
-        "4'10": { "<119": 0, "119-142": 1, "143-190": 2, "191%2b": 3 },
-        "4'11": { "<124": 0, "124-147": 1, "148-197": 2, "198%2b": 3 },
-        "5'0": { "<128": 0, "128-152": 1, "153-203": 2, "204%2b": 3 },
-        "5'1": { "<132": 0, "132-157": 1, "158-210": 2, "211%2b": 3 },
-        "5'2": { "<136": 0, "136-163": 1, "164-217": 2, "218%2b": 3 },
-        "5'3": { "<141": 0, "141-168": 1, "169-224": 2, "225%2b": 3 },
-        "5'4": { "<145": 0, "145-173": 1, "174-231": 2, "232%2b": 3 },
-        "5'5": { "<150": 0, "150-179": 1, "180-239": 2, "240%2b": 3 },
-        "5'6": { "<155": 0, "155-185": 1, "186-246": 2, "247%2b": 3 },
-        "5'7": { "<159": 0, "159-190": 1, "191-254": 2, "255%2b": 3 },
-        "5'8": { "<164": 0, "164-196": 1, "197-261": 2, "262%2b": 3 },
-        "5'9": { "<169": 0, "169-202": 1, "203-269": 2, "270%2b": 3 },
-        "5'10": { "<174": 0, "174-208": 1, "209-277": 2, "278%2b": 3 },
-        "5'11": { "<179": 0, "179-214": 1, "215-285": 2, "286%2b": 3 },
-        "6'0": { "<184": 0, "184-220": 1, "221-293": 2, "294%2b": 3 },
-        "6'1": { "<189": 0, "189-226": 1, "227-301": 2, "302%2b": 3 },
-        "6'2": { "<194": 0, "194-232": 1, "233-310": 2, "311%2b": 3 },
-        "6'3": { "<200": 0, "200-239": 1, "240-318": 2, "319%2b": 3 },
-        "6'4": { "<205": 0, "205-245": 1, "246-327": 2, "328%2b": 3 },
         
-    };
+        if (totalScore < 5) {
+            window.location.href = 'scorepage.php?totalScore=' + totalScore;
 
-    // Retrieve the scoring information based on the selected height and weight
-    var heightScoring = scoringInfo[heightValue];
-    if (heightScoring) {
-        return heightScoring[weightValue] || 0;
+        } else {
+            window.location.href = 'highscorepage.php?totalScore=' + totalScore;
+        }
+        
+    }
+    
+    function calculateScore(heightValue, weightValue) {
+        // Define scoring conditions based on height and weight values
+        var scoringInfo = {
+            "4'10": { "<119": 0, "119-142": 1, "143-190": 2, "191%2b": 3 },
+            "4'11": { "<124": 0, "124-147": 1, "148-197": 2, "198%2b": 3 },
+            "5'0": { "<128": 0, "128-152": 1, "153-203": 2, "204%2b": 3 },
+            "5'1": { "<132": 0, "132-157": 1, "158-210": 2, "211%2b": 3 },
+            "5'2": { "<136": 0, "136-163": 1, "164-217": 2, "218%2b": 3 },
+            "5'3": { "<141": 0, "141-168": 1, "169-224": 2, "225%2b": 3 },
+            "5'4": { "<145": 0, "145-173": 1, "174-231": 2, "232%2b": 3 },
+            "5'5": { "<150": 0, "150-179": 1, "180-239": 2, "240%2b": 3 },
+            "5'6": { "<155": 0, "155-185": 1, "186-246": 2, "247%2b": 3 },
+            "5'7": { "<159": 0, "159-190": 1, "191-254": 2, "255%2b": 3 },
+            "5'8": { "<164": 0, "164-196": 1, "197-261": 2, "262%2b": 3 },
+            "5'9": { "<169": 0, "169-202": 1, "203-269": 2, "270%2b": 3 },
+            "5'10": { "<174": 0, "174-208": 1, "209-277": 2, "278%2b": 3 },
+            "5'11": { "<179": 0, "179-214": 1, "215-285": 2, "286%2b": 3 },
+            "6'0": { "<184": 0, "184-220": 1, "221-293": 2, "294%2b": 3 },
+            "6'1": { "<189": 0, "189-226": 1, "227-301": 2, "302%2b": 3 },
+            "6'2": { "<194": 0, "194-232": 1, "233-310": 2, "311%2b": 3 },
+            "6'3": { "<200": 0, "200-239": 1, "240-318": 2, "319%2b": 3 },
+            "6'4": { "<205": 0, "205-245": 1, "246-327": 2, "328%2b": 3 },
+            
+        };
+
+        var heightScoring = scoringInfo[heightValue];
+        if (heightScoring) {
+            return heightScoring[weightValue] || 0;
+        }
+
+        return 0;
     }
 
-    // Default score if height or weight is not found
-    return 0;
-}
-            $(document).ready(function () {
-            $('#height').change(updateWeightOptions);
-            updateWeightOptions();
-        });
+    $(document).ready(function () {
+    $('#height').change(updateWeightOptions);
+        updateWeightOptions();
+    });
 
-        function updateWeightOptions() {
-            var heightValue = $('#height').val();
-            var weightSelect = $('#weight');
-            var weightOptions = $('#weightOptions');
+    function updateWeightOptions() {
+        var heightValue = $('#height').val();
+        var weightSelect = $('#weight');
+        var weightOptions = $('#weightOptions');
 
-            // Clear existing weight options
-            weightSelect.empty().append('<option value="null">Select an option</option>');
+        weightSelect.empty().append('<option value="null">Select an option</option>');
 
-            // Add weight options based on the selected height
             if (heightValue === "4'10") {
                 weightSelect.append('<option value="<119">&lt; 119 lbs. (54 kg)</option>');
                 weightSelect.append('<option value="119-142">119-142 lbs. (54-64 kg)</option>');
@@ -286,14 +340,14 @@ function calculateScore(heightValue, weightValue) {
             weightOptions.show();
         }
         function getParameterByName(name) {
-                var url = window.location.href;
-                name = name.replace(/[\[\]]/g, "\\$&");
-                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-                    results = regex.exec(url);
-                if (!results) return null;
-                if (!results[2]) return '';
-                return decodeURIComponent(results[2].replace(/\+/g, ' '));
-            }
-            </script>
-    </body>
+            var url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+</script>
+</body>
 </html>

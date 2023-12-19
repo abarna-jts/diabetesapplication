@@ -27,12 +27,12 @@ $totalScore = $_GET['totalScore'] ?? 0;
     </style>
 </head>
 <body>
-    <div class="container " name="form-container">
+<div class="container " name="form-container">
         <div class="row justify-content-center">
             <div class="col-md-6 col-10 my-4">
                 <h2 class="text-center mb-4">User Information</h2>
                 <form method="post" id="form" data-toggle="validator">
-                    
+
                     <!-- Title -->
                     <div class="form-group">
                         <label for="title">Title</label>
@@ -116,6 +116,7 @@ $totalScore = $_GET['totalScore'] ?? 0;
                         <span id="numberError"></span>
                     </div>
                    
+                   
                     <!-- Hidden input for the score -->
                     <input type="hidden" name="totalScore" value="<?php echo $totalScore; ?>" >
 
@@ -137,7 +138,7 @@ $totalScore = $_GET['totalScore'] ?? 0;
 <script>
     
 // PREVENT RIGHT CLICK AND SHORTCUTS
-    document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
     
     window.addEventListener("keydown", function (e) {
       if (e.keyCode == 123) {
@@ -204,6 +205,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const normalizedScore = urlParams.get('normalizedScore');
 
 
+
 // VALIDATION
 
 function validateAge(input) {
@@ -229,6 +231,10 @@ function validateEmail(input) {
             input.setCustomValidity('Enter a valid email address. Please include "@" and ".com"');
         }
     }
+
+
+
+
 
 
 //    https://script.google.com/macros/s/AKfycbwF0SbHK4jkDFrqKlqnO-1pUDfNEKDay_CZX-e5VuVQ6hm1RhoKXcipnlcHj2ERnGqk/exec

@@ -47,6 +47,7 @@
         </div>  
         <div class="history_box" id="historyContainer">
             <div class="history_content">
+                <h1 style="color: rgb(148, 116, 11);">Know the History</h1>
                 <div class="heading_heading">
                     <strong style="color:#1f57a0;font-size: 2em;">Etymology:</strong>
                     <p>The word diabetes comes from Latin diabētēs, which literally means "excessive discharge of urine". The word mellitus comes from the classical Latin word mellītus, meaning "mellite" (i.e. sweetened with honey; honey-sweet).</p>
@@ -124,6 +125,7 @@
         </div>
         <div id="diabetesContainer" class="diabetes" style="display: none;">
             <div class="diabetes_content">
+            <h1 style="color: rgb(148, 116, 11);">What is Diabetes?</h1>
                 <div class="diabetes_heading">
                     <strong class="h12">What is Diabetes?</strong>
                     <p>Diabetes Mellitus is a common non communicable disease characterized by high blood sugar (Glucose) levels. This is resulted from defects of insulin production from pancreas, or its action, or both. This disease is commonly referred to as “Diabetes”.</p>
@@ -143,9 +145,9 @@
             </div>
         </div>
         <div id="treatmentContainer" class="treatment" style="display: none;">
-        <div class="treatment_content">
-                <div class="treatment_heading">
-                    
+            <div class="treatment_content">
+            <h1 style="color: rgb(148, 116, 11);">How to Treat?</h1>
+                <div class="treatment_heading">               
                     <p>Diabetes is treated with insulin injections, tablets or combination of those. Background lifestyle modifications, in the terms of healthy diet and more regular exercise is the foundation for better diabetic control. Health education, good compliance and regular monitoring are the keys to success. Incorporation of the diabetic care plan to the routine life style leads to better happy long life.</p>
                     <strong style="color:rgb(49, 83, 151);">Treatment plan</strong><br><br>
                             <li ><strong> Life style Modifications:</strong></li>
@@ -161,6 +163,7 @@
         </div>
         <div id="riskContainer" class="risk" style="display: none;">
             <div class="risk_content">
+            <h1 style="color: rgb(148, 116, 11);">Are you at risk?</h1>
                 <div class="risk_heading">
                     <p>Many people with Diabetes do not display any symptoms. It is important for you to know your risk for Diabetes. Being Asians, we are at high risk for Diabetes despite our age, sex, body build. If you are at risk, get checked with no delay.</p>
                     

@@ -47,16 +47,28 @@
                 border-radius: 50%;
             }
             .custom-rounded-border {
+                border: 2px solid #339433;
                 border-radius: 15px 50px;
-                background:#8cccbe;
+                background:#dddddd;
                 padding: 20px; 
                 width: 200px;
                 height: 150px; 
+                
+            }
+            .custom-rounded-border:hover {
+                background:#f3f3f3;
+                
+                
             }
             .card-body .card-text{
                 color:#292727;
             }
-
+            .custom-rounded-border .card-img-top {
+                border: 2px solid #339433;
+                border-radius: 10px;
+            }
+            .custom-rounded-border .card-img-top:hover{
+            }
         </style>
     </head>
     <body>
@@ -68,22 +80,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item ">
-                            <a class="nav-link text-white" href="#" >Home </a>
+                            <a class="nav-link text-white" href="index.php" >Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#" >Hospital</a>
+                            <a class="nav-link text-white" href="Hospital.php" >Hospital</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#" >Discharge</a>
+                            <a class="nav-link text-white" href="discharge.php" >Discharge</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#" >Summary</a>
+                            <a class="nav-link text-white" href="Summary1.php" >Summary</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#" >Diet Plan</a>
+                            <a class="nav-link text-white" href="dplan.php" >Diet Plan</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#" >History of Diabetes</a>
+                            <a class="nav-link text-white" href="history.php" >History of Diabetes</a>
                         </li>
                     </ul>
                 </div>
@@ -103,7 +115,7 @@
             <div class="row my-5">
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/weight-img3.png" class="card-img-top" alt="...">
+                        <img src="images/weight-img3-1.png" class="card-img-top" >
                         <div class="card-body" >
                             <p class="card-text">1 Month Weight <br> Management Diet Plan</p>
                         </div>
@@ -112,7 +124,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/weight-img4.png" class="card-img-top" alt="...">
+                        <img src="images/weight-img4-1.png" class="card-img-top" style="height:9.5em;">
                         <div class="card-body">
                             <p class="card-text">3 Month Weight <br> Management Diet Plan</p>
                         </div>
@@ -121,7 +133,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="images/6mon-diet.jpg" class="card-img-top" style="height:10.5em;">
                         <div class="card-body">
                             <p class="card-text">6 Month Weight <br> Management Diet Plan</p>
                         </div>
@@ -130,7 +142,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="images/12mon-diet.jpg" class="card-img-top" style="height:10.5em;">
                         <div class="card-body">
                             <p class="card-text">12 Month Weight <br> Management Diet Plan</p>
                         </div>
@@ -142,7 +154,7 @@
             <div class="row my-5">
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/1mon-diet.jpg" class="card-img-top" alt="...">
+                        <img src="images/1mon-diet.jpg" class="card-img-top" style="height:9em;">
                         <div class="card-body">
                             <p class="card-text">1 Month Disease <br> Management Diet Plan</p>
                         </div>
@@ -181,7 +193,7 @@
             <div class="row my-5">
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/12mondiet.jpg" class="card-img-top" alt="...">
+                        <img src="images/12mondiet-1.png" class="card-img-top" >
                         <div class="card-body">
                             <p class="card-text">12 Month Disease <br> Management Diet Plan</p>
                         </div>
@@ -220,8 +232,8 @@
             <div class="row my-5">
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <img src="images/heart-img.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" >
                             <p class="card-text">Heart Care Diet Plan</p>
                         </div>
                     </div>
@@ -229,8 +241,8 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/antidiet.png" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <img src="images/depression-img.jpg" class="card-img-top" >
+                        <div class="card-body" >
                             <p class="card-text">Anti-depression Diet Plan</p>
                         </div>
                     </div>
@@ -239,7 +251,7 @@
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
                         <img src="images/renaldiet.jpg" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <div class="card-body" >
                             <p class="card-text">Renal Disorder Diet Plan</p>
                         </div>
                     </div>
@@ -248,7 +260,7 @@
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
                         <img src="images/thy.jpg" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <div class="card-body">
                             <p class="card-text">Thyroid Diet Plan</p>
                         </div>
                     </div>
@@ -259,8 +271,8 @@
             <div class="row my-5">
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body" style="width:50%;">
+                        <img src="images\cancerdiet-img.jpg" class="card-img-top" >
+                        <div class="card-body">
                             <p class="card-text">Cancer Diet Plan</p>
                         </div>
                     </div>
@@ -268,7 +280,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images\ayurvedic-img.jpeg" class="card-img-top" alt="...">
+                        <img src="images\ayurvedic-img.jpeg" class="card-img-top" style="height:11em;">
                         <div class="card-body">
                             <p class="card-text">Panchkarma Therapies – <br> Ancient Ayurveda System</p>
                         </div>
@@ -277,8 +289,8 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/premarriagediet.jpg" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <img src="images/premarriagediet-1.png" class="card-img-top">
+                        <div class="card-body">
                             <p class="card-text">Pre-marriage Package</p>
                         </div>
                     </div>
@@ -286,7 +298,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/pregnancydiet.jpg" class="card-img-top" alt="...">
+                        <img src="images/pregnancydiet-1.png" class="card-img-top" >
                         <div class="card-body">
                             <p class="card-text">Post-pregnancy Weight <br> Loss Diet Plan</p>
                         </div>
@@ -299,7 +311,7 @@
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
                         <img src="images/lactosediet.jpg" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:70%;">
+                        <div class="card-body">
                             <p class="card-text">Lactose Intolerance Diet Plan</p>
                         </div>
                     </div>
@@ -308,7 +320,7 @@
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
                         <img src="images/navratidiet.png" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <div class="card-body">
                             <p class="card-text">Navratri Diet Plan</p>
                         </div>
                     </div>
@@ -316,7 +328,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="..." class="card-img-top" alt="...">
+                        <img src="images/yoga-diet.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Summer Body Challenge Diet Plan</p>
                         </div>
@@ -325,8 +337,8 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="" class="card-img-top" alt="...">
-                        <div class="card-body" style="width:60%;">
+                        <img src="images/muscle-gain-diet.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
                             <p class="card-text">Muscle Gain Diet Plan</p>
                         </div>
                     </div>
@@ -355,7 +367,7 @@
 
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images/alopeciadiet.jpg" class="card-img-top" alt="...">
+                        <img src="images/alopeciadiet-1.png" class="card-img-top" style="height:10em;">
                         <div class="card-body">
                             <p class="card-text">Alopecia Diet Plan</p>
                         </div>
