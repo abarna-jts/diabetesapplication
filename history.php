@@ -35,14 +35,16 @@
             <div class="gaplrtb20 bggray">
                 <div class="gapb10"><a class="btnreadmore3" href="history.php">Know the History </a></div>
                 <div class="gapb10"><a class="btnreadmore3" href="#" onclick="showDiabetes()">What is Diabetes</a></div>
-                <div class="gapb10"><a class="btnreadmore3" href="#"  onclick="showrisk()">Are you at risk</a></div>
+                <div class="gapb10"><a class="btnreadmore3" href="#" onclick="showSymptoms()">Diabetes Symptoms</a></div>
+
+                <div class="gapb10"><a class="btnreadmore3" href="#"  onclick="showrisk()">Diabetes Risk Factory</a></div>
                 <div class="gapb10"><a class="btnreadmore3" href="#" onclick="showtreatment()">How to treat</a></div>
                 
                 
             </div>
     
             <div class="image-container">
-                    <img src="images\leader.png" alt="Image description">
+                    <img src="images\diabetes-leader.png" alt="Image description">
             </div>
         </div>  
         <div class="history_box" id="historyContainer">
@@ -144,6 +146,35 @@
                 </div>
             </div>
         </div>
+
+        <div id="SymptomsContainer" class="symptoms" style="display: none;">
+            <div class="symptoms_content">
+                <h1 style="color: rgb(148, 116, 11);">Diabetes Symptoms</h1>
+                <div class="symptoms_heading">               
+                    <p>If you have any of the following diabetes symptoms, see your doctor about getting your <a>blood sugar tested:</a></p>
+                    <ul class="h20">
+                        <li>Urinate (pee) a lot, often at night</li>
+                        <li>Are very thirsty</li>
+                        <li>Lose weight without trying</li>
+                        <li>Are very hungry</li>
+                        <li>Have blurry vision</li>
+                        <li>Have numb or tingling hands or feet</li>
+                        <li>Feel very tired</li>
+                        <li>Have very dry skin</li>
+                        <li>Have sores that heal slowly</li>
+                        <li>Have more infections than usual</li>
+                    </ul>
+                    <strong style="font-size:1.9em;">Symptoms of Type 1 Diabetes</strong>
+                    <p>People who have type 1 diabetes may also have nausea, vomiting, or stomach pains. Type 1 diabetes can be diagnosed at any age, and symptoms can develop in just a few weeks or months and can be severe.</p>
+                    <strong style="font-size:1.9em;">Symptoms of Type 2 Diabetes</strong>
+                    <p>Type 2 diabetes symptoms often take several years to develop. Some people don’t notice any symptoms at all. Type 2 diabetes usually starts when you’re an adult, though more and more children and teens are developing it. Because symptoms are hard to spot, it’s important to know the risk factors for type 2 diabetes. Make sure to visit your doctor if you have any of them.</p>
+                    <strong style="font-size:1.9em;">Symptoms of Gestational Diabetes</strong>
+                    <p>Gestational diabetes (diabetes during pregnancy) usually doesn’t have any symptoms. If you’re pregnant, your doctor should test you for gestational diabetes between 24 and 28 weeks of pregnancy. If needed, you can make changes to protect your health and your baby’s health.</p>
+                    <button class="slide" onclick="NextPage()" style="color:#fff;">&nbsp;</button><br><br><br>
+                </div>
+            </div>
+        </div>
+
         <div id="treatmentContainer" class="treatment" style="display: none;">
             <div class="treatment_content">
             <h1 style="color: rgb(148, 116, 11);">How to Treat?</h1>
@@ -163,27 +194,60 @@
         </div>
         <div id="riskContainer" class="risk" style="display: none;">
             <div class="risk_content">
-            <h1 style="color: rgb(148, 116, 11);">Are you at risk?</h1>
+            <h1 style="color: rgb(148, 116, 11);">Diabetes Risk Factory</h1>
                 <div class="risk_heading">
                     <p>Many people with Diabetes do not display any symptoms. It is important for you to know your risk for Diabetes. Being Asians, we are at high risk for Diabetes despite our age, sex, body build. If you are at risk, get checked with no delay.</p>
-                    
-                            <li ><strong> Who needs screening?</strong></li>
-                            <p>Anyone more than 40 years of age should get screened for Diabetes and every 3 years thereafter.</p>
-                            <p>A person with any of the following risk factors should start early and check more frequently.</p>
-                            <li> <strong> Risk factors: </strong></li>
+                       <strong style="font-size:2em;">Type 1 Diabetes</strong>
+                            <p>Type 1 diabetes is thought to be caused by an immune reaction (the body attacks itself by mistake). Risk factors for type 1 diabetes are not as clear as for prediabetes and type 2 diabetes. Known risk factors include:</p>
                                 <ul class="h20">
-                                    <li>Overweight/ obesity</li>
-                                    <li>Sedentary lifestyle/ lack of exercise</li>
-                                    <li>Prediabetes</li>
-                                    <li>Hypertension (High blood pressure)</li>
-                                    <li>High cholesterol and lipids</li>
-                                    <li>Family history: Having a relative (parent/sibling/child) with Diabetes</li>
-                                    <li>History of Gestational Diabetes (Diabetes during pregnancy)</li>
-                                    <li>Polycystic ovary syndrome (obesity related menstrual disorder in women)</li>
-                                    <li>Acanthosis nigricans (dark, thick, velvety skin over neck and arm pits)</li>
+                                    <li><strong style="font-size:1.1em;color:#000;">Family history:</strong> Having a parent, brother, or sister with type 1 diabetes</li>
+                                    <li><strong style="font-size:1.1em;color:#000;">Age: </strong>You can get type 1 diabetes at any age, but it usually develops in children, teens, or young adults.</li>
                                 </ul>
-                                <p style="text-align:center;font-size:1.6em;color:rgb(148, 116, 11);">Do you want to Test you Diabetes?</p>
-                                <a href="test1.php" class="btntype" style="text-decoration: none;"><button class="styled-button" id="button-7">Take the Test</button></a>
+                            <p>In the United States, White people are more likely to develop type 1 diabetes than African American and Hispanic or Latino people.</p>
+                            <p>Currently, no one knows how to prevent type 1 diabetes.</p>
+
+                            <strong style="font-size:2em;">Type 2 Diabetes</strong>
+                            <p>You’re at risk for type 2 diabetes if you:</p>
+                                <ul class="h20">
+                                    <li>Have prediabetes.</li>
+                                    <li>Are overweight.</li>
+                                    <li>Are 45 years or older.</li>
+                                    <li>Have a parent, brother, or sister with type 2 diabetes.</li>
+                                    <li>Are physically active less than 3 times a week.</li>
+                                    <li>Have ever had gestational diabetes (diabetes during pregnancy) or given birth to a baby who weighed over 9 pounds.</li>
+                                    <li>Are an African American, Hispanic or Latino, American Indian, or Alaska Native person. Some Pacific Islanders and Asian American people are also at higher risk.</li>
+                                </ul>
+                            <p>In the United States, White people are more likely to develop type 1 diabetes than African American and Hispanic or Latino people.</p>
+                            <p>You can prevent or delay type 2 diabetes with proven lifestyle changes. These include losing weight if you’re overweight, eating a healthy diet, and getting regular physical activity.</p>
+
+                            <strong style="font-size:2em;">Prediabetes</strong>
+                            <p>You’re at risk for prediabetes if you:</p>
+                                <ul class="h20">
+                                    <li>Are overweight.</li>
+                                    <li>Are 45 years or older.</li>
+                                    <li>Have a parent, brother, or sister with type 2 diabetes.</li>
+                                    <li>Are physically active less than 3 times a week.</li>
+                                    <li>Have ever had gestational diabetes (diabetes during pregnancy) or given birth to a baby who weighed over 9 pounds.</li>
+                                    <li>Are an African American, Hispanic or Latino, American Indian, or Alaska Native person. Some Pacific Islanders and Asian American people are also at higher risk.</li>
+                                </ul> 
+                            <p>You can prevent or reverse prediabetes with proven lifestyle changes. These include losing weight if you’re overweight, eating a healthy diet, and getting regular physical activity.</p>
+
+                           <strong style="font-size:2em;">Gestational Diabetes</strong>
+                            <p>You’re at risk for gestational diabetes (diabetes while pregnant) if you:</p>
+                                <ul class="h20">
+                                    <li>Had gestational diabetes during a previous pregnancy.</li>
+                                    <li>Have given birth to a baby who weighed over 9 pounds.</li>
+                                    <li>Are overweight.</li>
+                                    <li>Are more than 25 years old.</li>
+                                    <li>Have a family history of type 2 diabetes.</li>
+                                    <li>Have a hormone disorder called polycystic ovary syndrome (PCOS).</li>
+                                    <li>Are an African American, Hispanic or Latino, American Indian, Alaska Native, Native Hawaiian, or Pacific Islander person.</li>
+                                </ul>
+                            <p>Gestational diabetes usually goes away after you give birth, but increases your risk for type 2 diabetes. Your baby is more likely to have obesity as a child or teen, and to develop type 2 diabetes later in life.</p>
+                            <p>Before you get pregnant, you may be able to prevent gestational diabetes with lifestyle changes. These include losing weight if you’re overweight, eating a healthy diet, and getting regular physical activity.</p>
+
+                            <p style="text-align:center;font-size:1.6em;color:rgb(148, 116, 11);">Do you want to Test you Diabetes?</p>
+                            <button class="risk_slide" onclick="nextpage()" style="color:#fff;">&nbsp;</button><br><br><br>
                 </div>
             </div>
         </div>
@@ -276,6 +340,7 @@ function showSlides(n) {
     function showHistory() {
         document.getElementById('historyContainer').style.display = 'block';
         document.getElementById('diabetesContainer').style.display = 'none';
+        document.getElementById('SymptomsContainer').style.display = 'none';
         document.getElementById('treatmentContainer').style.display = 'none';
         document.getElementById('riskContainer').style.display = 'none';
     }
@@ -283,15 +348,27 @@ function showSlides(n) {
     function showDiabetes() {
         document.getElementById('historyContainer').style.display = 'none';
         document.getElementById('diabetesContainer').style.display = 'block';
+        document.getElementById('SymptomsContainer').style.display = 'none';
         document.getElementById('treatmentContainer').style.display = 'none';
         document.getElementById('riskContainer').style.display = 'none';
 
-        document.querySelector('.image-container img').src = 'images/diabetes-img2.jpg';
+        document.querySelector('.image-container img').src = 'images/diabetics-img.jpg';
+    }
+
+    function showSymptoms() {
+        document.getElementById('historyContainer').style.display = 'none';
+        document.getElementById('diabetesContainer').style.display = 'none';
+        document.getElementById('SymptomsContainer').style.display = 'block';
+        document.getElementById('treatmentContainer').style.display = 'none';
+        document.getElementById('riskContainer').style.display = 'none';
+        
+        document.querySelector('.image-container img').src = 'images/risk-img1.jpg';
     }
 
     function showtreatment() {
-        document.getElementById('historyContainer').style.display = 'none';
+        document.getElementById('historyContainer').style.display = 'none';   
         document.getElementById('diabetesContainer').style.display = 'none';
+        document.getElementById('SymptomsContainer').style.display = 'none';
         document.getElementById('treatmentContainer').style.display = 'block';
         document.getElementById('riskContainer').style.display = 'none';
 
@@ -300,9 +377,20 @@ function showSlides(n) {
     function showrisk() {
         document.getElementById('historyContainer').style.display = 'none';
         document.getElementById('diabetesContainer').style.display = 'none';
+        document.getElementById('SymptomsContainer').style.display = 'none';
         document.getElementById('treatmentContainer').style.display = 'none';
         document.getElementById('riskContainer').style.display = 'block';
 
         document.querySelector('.image-container img').src = 'images/risk-img1.jpg';
+    }
+    function NextPage(){
+        document.getElementById('historyContainer').style.display = 'none';
+        document.getElementById('diabetesContainer').style.display = 'none';
+        document.getElementById('SymptomsContainer').style.display = 'none';
+        document.getElementById('treatmentContainer').style.display = 'none';
+        document.getElementById('riskContainer').style.display = 'block';
+    }
+    function nextpage(){
+        window.location.href = 'test1.php';
     }
 </script>

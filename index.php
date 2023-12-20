@@ -99,34 +99,46 @@
         </style>
     </head>
     <body>
-            <nav class="custom-shadow navbar navbar-expand-lg navbar-light" style="background-color:#53c4ba;">
-                <a class="navbar-brand" href="#"><img src="images/jorimlogo.jfif"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" href="index.php" >Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="Hospital.php" >Hospital</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="discharge.php" >Discharge</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="Summary1.php" >Summary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="dplan.php" >Diet Plan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="history.php" >History of Diabetes</a>
-                        </li>
-                    </ul>
+    <nav class="custom-shadow navbar navbar-expand-lg navbar-light" style="background-color:#53c4ba;">
+    <a class="navbar-brand" href="#"><img src="images/jorimlogo.jfif"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="index.php">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
                 </div>
-            </nav>  
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Hospital.php">Hospital</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="discharge.php">Discharge</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="Summary1.php">Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="dplan.php">Diet Plan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="history.php">History of Diabetes</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
 
             <div class="container mt-5">
                 <h2 class="text-center font-weight-bold" style="color: #138b73;">Prediabetes is at high risk for type 2 Diabetes.</h2>

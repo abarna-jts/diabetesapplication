@@ -271,7 +271,7 @@
             <div class="row my-5">
                 <div class="col-md-3">
                     <div class="card custom-rounded-border" style="width: 16rem;height:95%;">
-                        <img src="images\cancerdiet-img.jpg" class="card-img-top" >
+                        <img src="images\cancerdiet-img-1.png" class="card-img-top" >
                         <div class="card-body">
                             <p class="card-text">Cancer Diet Plan</p>
                         </div>
