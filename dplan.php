@@ -46,6 +46,25 @@
                 height:35%;
                 border-radius: 50%;
             }
+            .dropdown-item.active, .dropdown-item:active {
+                color: #fff;
+                text-decoration: none;
+                background-color: #ccc;
+            }
+            .dropdown-item {
+                display: block;
+                width: 100%;
+                padding: .25rem;
+                clear: both;
+                font-weight: 400;
+                color: #212529;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+            }
+            .dropdown-item:hover{
+                background-color:#ccc;     
+            }
             .custom-rounded-border {
                 border: 2px solid #339433;
                 border-radius: 15px 50px;
@@ -72,34 +91,41 @@
         </style>
     </head>
     <body>
-            <nav class="custom-shadow navbar navbar-expand-lg navbar-light" style="background-color:#53c4ba;">
-                <a class="navbar-brand" href="#"><img src="images/jorimlogo.jfif"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" href="index.php" >Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="Hospital.php" >Hospital</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="discharge.php" >Discharge</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="Summary1.php" >Summary</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="dplan.php" >Diet Plan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="history.php" >History of Diabetes</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>  
+        <nav class="custom-shadow navbar navbar-expand-lg navbar-light" style="background-color:#53c4ba;">
+            <a class="navbar-brand" href="#"><img src="images/jorimlogo.jfif"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="aboutus.php">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Diabetes Chat
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Hospital.php">Hospital</a>
+                            <a class="dropdown-item" href="discharge.php">Discharge</a>
+                            <a class="dropdown-item" href="Summary1.php">Summary</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="dplan.php">Diet Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="history.php">History of Diabetes</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+
         <div class="container">
             <div class="custom-shadow p-3 mt-5 rounded" style="background-color:#f5f5f5;">
                 <h5 class="text-center  my-4 " style="color:rgb(10 76 153);font-size:1.3em;">Our Diet Plan Offers Result riented Diet Plans to Keep You Fit and Active always</h5>

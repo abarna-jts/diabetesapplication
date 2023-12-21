@@ -3,6 +3,8 @@
     <title>Diabetes Test Form</title>
     <head>   
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-nwl1z56SrmPMDX9wMJ00v5yoQoyq1R03cm4RV5Bl3DO4JF3s3hoV3CaYIbvn2yRm3t+JNS1N9i+0ENQEXpe1nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <style>
                    
             body{
@@ -39,6 +41,25 @@
                 width:35%;
                 height:35%;
                 border-radius: 50%;
+            }
+            .dropdown-item.active, .dropdown-item:active {
+                color: #fff;
+                text-decoration: none;
+                background-color: #ccc;
+            }
+            .dropdown-item {
+                display: block;
+                width: 100%;
+                padding: .25rem;
+                clear: both;
+                font-weight: 400;
+                color: #212529;
+                white-space: nowrap;
+                background-color: transparent;
+                border: 0;
+            }
+            .dropdown-item:hover{
+                background-color:#ccc;     
             }
             .sliding {
             width: 30%;
@@ -109,24 +130,18 @@
             <li class="nav-item">
                 <a class="nav-link text-white" href="index.php">Home</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="aboutus.php">About</a>
+            </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
+                <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Diabetes Chat
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="Hospital.php">Hospital</a>
+                    <a class="dropdown-item" href="discharge.php">Discharge</a>
+                    <a class="dropdown-item" href="Summary1.php">Summary</a>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="Hospital.php">Hospital</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="discharge.php">Discharge</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="Summary1.php">Summary</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="dplan.php">Diet Plan</a>
@@ -149,7 +164,7 @@
                         <h2 class="font-weight-bold" style="color: rgb(10 76 153);">Could You Have Prediabetes?</h2><br><br>
                         <button class="sliding" onclick="NextPage()" style="color:#fff;">&nbsp;</button><br><br><br>
                         <a target="_blank" style="color:#3372ad;font-size: 1.2em;" href="#" onclick="printFile()">Print a copy of the test to take later</a><br>
-                        <a href="about.php" style="color:#3372ad;font-size: 1.2em;">About the Prediabetes Risk Test</a>
+                        <a href="about_prediabetes.php" style="color:#3372ad;font-size: 1.2em;">About the Prediabetes Risk Test</a>
                     </div>
                 </div>
             </div>
