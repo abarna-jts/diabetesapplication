@@ -233,6 +233,7 @@ ob_end_flush();
             <nav class="navbar">
                 <ul>
                     <li><a href="./index.php">Home</a></li>
+					<li><a href="./about.php">About</a></li>
                     <li><a href="./Hospital.php">Hospital</a></li>
                     <li><a href="./discharge.php">Discharge</a></li>
                     <li><a href="./Summary1.php">Summary</a></li>

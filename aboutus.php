@@ -113,6 +113,9 @@
             opacity: 0;
             
         }
+        .u_list li{
+            color:#16a085;
+        }
         </style>
     </head>
     <body>
@@ -172,7 +175,7 @@
         <div class="container-fluid mt-5 " style="background-color:#fff;">
             <div class="row">
                 <div class="col-md-2 "></div>
-                    <div class="col-md-4 mt-5 border w-25" >
+                    <div class="col-md-4 mt-5 border w-25" style="background-color:#ccc;" >
                         <div class="col-sm-8 mt-5">
                             <h5 style="color:#287546;">ABOUT DIABETES</h5>
                             <h1>Warning Signs</h1>
@@ -187,5 +190,31 @@
             </div>
         </div>
 
+        <div class="container-fluid mt-5 " style="background-color:#fff;">
+            <div class="row">
+                <div class="col-md-2 "></div>
+                    <div class="col-md-6">
+                        <img src="images/img2.jpg" alt="Your Image" class="rounded mt-5" style="width:60%;height:auto;">
+                    </div>  
+
+                    <div class="col-md-4 mt-5 border w-25" style="background-color:#ccc;" >
+                        <div class="col-sm-8 mt-5">
+                            <h5 style="color:#287546;">ABOUT DIABETES</h5>
+                            <h1>Understanding Diabetes</h1>
+                            <p>From symptoms and treatment, to management and medication—arm yourself with the knowledge to live well with diabetes.</p>
+                            <div class="u_list">
+                                <ul>
+                                    <li>Type 1 Diabetes</li>
+                                    <li>Type 2 Diabetes</li>
+                                    <li>Prediabetes</li>
+                                    <li>Gestational Diabetes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                 
+                       
+            </div>
+        </div>
 </body>
 </html>
